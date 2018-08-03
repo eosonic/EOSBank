@@ -46,14 +46,14 @@ MEMO为空时默认租赁24小时。如需租赁3天或7天请在MEMO写入3d/7d
 > cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "7d" 
 
 ##### 3. 储户提现
-cleos push action **eosiocpubank** withdraw '["你的账号","10.0000 EOS"]' -p 你的账号 
-查询提现进度：
-cleos get table **eosiocpubank** 你的账号 refunds  
-根据EOS主网的设定，提现延迟3天，自动到账。
+>cleos push action **eosiocpubank** withdraw '["你的账号","10.0000 EOS"]' -p 你的账号 
+
+根据EOS主网的设定，提现延迟3天，自动到账,如需查询提现进度： 
+>cleos get table **eosiocpubank** 你的账号 refunds 
 
 ### 当前租赁价格
 
-利息 | 获得资源 | 租赁周期 | 
+利息 | 获得资源 | 租赁持续 | 
 ------------ | -------------|-------------
 0.1 EOS | 30.4 EOS CPU | 1天 | 
 0.1 EOS | 24.3 EOS CPU | 3天 | 
