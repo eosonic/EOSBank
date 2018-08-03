@@ -105,7 +105,6 @@ MEMO为空时默认租赁24小时。如需租赁3天或7天请在MEMO写入3d/7d
 
 ### 联系方式 
 - EOSonic@outlook.com
-- Wechat@eosiobank
-
+- Wechat@eosiobank 
 ---
 ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/eosbank.png)
