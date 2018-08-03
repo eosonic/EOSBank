@@ -15,7 +15,7 @@
 柚资银行拥有充足的固定资本，同时吸收EOS小额储蓄，我们支持客户以大于1个EOS的数量储蓄自己的EOS币，我们会把利息收入返还给储蓄者。多样的资金来源，强大的资本保证，充分保障快速变化的租赁需求。
 
 - #### 全自动执行租赁订单
-采用智能合约响应租赁请求，任何人可以发送EOS币到账户eosiocpubank，系统按照当前价格立即租赁CPU给发送的客户。
+采用智能合约响应租赁请求，任何人可以发送EOS币到合约账户**eosiocpubank**，系统按照当前价格立即租赁CPU给发送的客户。
 
 - #### 先进的租赁周期算法
 同时满足客户的临时性资源需求和长周期资源租赁需求，智能合约按照需求的周期自动报价。
@@ -30,30 +30,30 @@
 ### 操作说明
 
 ##### 1. 储蓄  
-向合约账户：eosiocpubank 转入EOS,memo写：deposit，最低储值10EOS,每笔获取的分红直接转为储蓄，小于10个EOS会转账失败。
+向合约账户：**eosiocpubank** 转入EOS,memo写：deposit，最低储值10EOS,每笔获取的分红直接转为储蓄，小于10个EOS会转账失败。
 > cleos transfer 你的账号 eosiocpubank "100 EOS" "deposit"
 
 查询余额（储值+分红）
-> cleos get table eosiocpubank 你的账号 deposit
+> cleos get table **eosiocpubank** 你的账号 deposit
 
 ##### 2. 租赁
-向合约账户：eosiocpubank 转入EOS，租赁成功后，不可退租，到期自动回收资源。
-由于EOS网络存在大量发送0.0001个EOS的广告行为，柚资银行支持的最低租赁发送0.01 EOS。
-> cleos transfer 你用账号 eosiocpubank "0.1 EOS" "" 
+向合约账户：**eosiocpubank** 转入EOS，租赁成功后，不可退租，到期自动回收资源。 
+由于EOS网络存在大量发送0.0001个EOS的广告行为，柚资银行支持的最低租赁发送0.01 EOS。 
+> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "" 
 
-MEMO为空时默认租赁24小时。如需租赁3天或7天请在MEMO写入3d/7d：
-> cleos transfer 你的账号 eosiocpubank "0.1 EOS" "3d"
-> cleos transfer 你的账号 eosiocpubank "0.1 EOS" "7d"
+MEMO为空时默认租赁24小时。如需租赁3天或7天请在MEMO写入3d/7d： 
+> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "3d" 
+> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "7d" 
 
 ##### 3. 储户提现
-cleos push action eosiocpubank withdraw '["你的账号","10.0000 EOS"]' -p 你的账号
- 查询提现进度：
-cleos get table eosiocpubank 你的账号 refunds 
+cleos push action **eosiocpubank** withdraw '["你的账号","10.0000 EOS"]' -p 你的账号 
+查询提现进度：
+cleos get table **eosiocpubank** 你的账号 refunds  
 根据EOS主网的设定，提现延迟3天，自动到账。
 
 ### 当前租赁价格
 
--利息-    |   -获得资源-   | -租赁周期- |    
+-利息-    |   -获得资源-   | -租赁周期-  |    
 
 0.1 EOS  - - 30.4 EOS CPU - - -      1天  
 0.1 EOS  - - 24.3 EOS CPU - - -      3天  
@@ -79,7 +79,7 @@ Everyday 15:00 UTC ，柚子银行将会停止服务半小时。请勿发送任�
 你将会收到租赁利润，通常的年化收益率将会达到20%甚至30%，每笔交易你都可以获得利润，这些利润在你选择提币后一并退还到你的EOS账号。
 
 - 我将如何开始租赁CPU？
-按照你的需求，向EOS账号EosioCpuBank发送一定数量的币，系统会自动抵押CPU资源给你的账号。
+按照你的需求，向EOS合约**EosioCpuBank**发送一定数量的币，系统会自动抵押CPU资源给你的账号。
 0.01个币将会获得3.04个币的CPU资源
 0.1个币将会获得30.4个币的CPU资源
 1个币将会获得304个币的CPU资源
@@ -93,7 +93,7 @@ Everyday 15:00 UTC ，柚子银行将会停止服务半小时。请勿发送任�
 - 我是客户，你们账户余额是0，我无法租赁资源是怎么回事？
 每一家银行都不是无限资本，你可以在任何区块链浏览器上搜索账号EosioCpuBank，他将会显示我们现在租赁出去了多少EOS币，我们还有多少币可以提供给客户出租。当账号余额为0，我们就没有资源可以租赁给客户，我们讲尽快补充资本为客户服务。
 
-- 我是储户，eosiocpubank的账户显示余额为0，我的钱在哪里？
+- 我是储户，**eosiocpubank**的账户显示余额为0，我的钱在哪里？
 你的EOS被租赁给其他客户了，他们都是安全的，我们采用抵押租赁而不是过户租赁模式，不会丢失任何EOS资产。
 
 - 如何更划算的租赁CPU？
