@@ -53,13 +53,12 @@ cleos get table **eosiocpubank** 你的账号 refunds
 
 ### 当前租赁价格
 
--利息-    |   -获得资源-   | -租赁周期-  |    
-
-0.1 EOS  - - 30.4 EOS CPU - - -      1天  
-0.1 EOS  - - 24.3 EOS CPU - - -      3天  
-0.1 EOS  - - 18.0 EOS CPU - - -      1周    
-0.1 EOS  - - 17.3 EOS CPU - - -   1周以上    
-
+利息 | 获得资源 | 租赁周期 | 
+------------ | -------------|-------------
+0.1 EOS | 30.4 EOS CPU | 1天 | 
+0.1 EOS | 24.3 EOS CPU | 3天 | 
+0.1 EOS | 18.0 EOS CPU | 1周 | 
+0.1 EOS | 17.3 EOS CPU | 1周以上 | 
 
 ### 储蓄分红结算
 
