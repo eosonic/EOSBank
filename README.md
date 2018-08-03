@@ -11,16 +11,16 @@
 ### 操作说明
 
 ##### 1. 租赁
-向合约账户：**eosiocpubank** 转入EOS，租赁成功后，不可退租，到期自动回收资源。 
+向合约账户：**eosiocpubank** 转入少量EOS，请参阅下一章节**当前租赁价格**，合约将会自动为你计算租赁数量，并抵押EOS使你获得CPU计算资源，一旦租赁成功后，不可退租，租赁到期后合约自动执行资源回收。   
 由于EOS网络存在大量发送0.0001个EOS的广告行为，柚资银行支持的最低租赁发送0.01 EOS。 
 > cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "" 
 
-MEMO为空时默认租赁24小时。如需租赁3天或7天请在MEMO写入3d/7d： 
-> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "3d" 
-> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "7d" 
+转账备注MEMO为空时默认租赁24小时。如需租赁3天或7天请在转账MEMO写入3d/7d，命令行方式如下所示：  
+> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "3d"   
+> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "7d"  
 
 ##### 2. 储蓄  
-向合约账户：**eosiocpubank** 转入EOS,memo写：deposit，最低储值10EOS,每笔获取的分红直接转为储蓄，小于10个EOS会转账失败。
+向合约账户：**eosiocpubank** 转入EOS,memo写：deposit，最低储值10EOS,每笔租赁成交后，获取的分红自动转为储蓄，注意，转账少于10个EOS将会失败，如果不写备注MEMO，将会自动为你租赁CPU资源，请参阅上一条。命令行方式如下所示： 
 > cleos transfer 你的账号 eosiocpubank "100 EOS" "deposit"
 
 查询余额（储值+分红）
