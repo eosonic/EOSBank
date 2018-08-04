@@ -106,6 +106,9 @@
 
 ### 联系方式  
 - EOSonic@outlook.com 
-- Wechat@eosiobank  
+- Wechat@eosiobank 
+
+#### 柚资银行是虎符钱包旗下DApp 详情参阅https://hoo.com/
+
 ---
 ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/eosbank.png)
