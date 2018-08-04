@@ -25,7 +25,8 @@
 
 查询余额（储值+分红）
 > cleos get table **eosiocpubank** 你的账号 deposit  
-超过5000币的储蓄，请通过创建权限delegate和undelegage完成权限隔离，仅需要将这两个权限授权给我们即可。
+
+超过5000EOS币的储蓄，请通过创建权限delegate和undelegage完成权限隔离，仅需要将这两个权限授权给我们即可。请您准备一对全新的公钥私钥，并请跟我们联系，我们会提供设置帮助。
 
 ##### 3. 储户提现
 >cleos push action **eosiocpubank** withdraw '["你的账号","10.0000 EOS"]' -p 你的账号 
