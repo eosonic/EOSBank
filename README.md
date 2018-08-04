@@ -24,7 +24,8 @@
 > cleos transfer 你的账号 eosiocpubank "100 EOS" "deposit"
 
 查询余额（储值+分红）
-> cleos get table **eosiocpubank** 你的账号 deposit
+> cleos get table **eosiocpubank** 你的账号 deposit  
+超过5000币的储蓄，请通过创建权限delegate和undelegage完成权限隔离，仅需要将这两个权限授权给我们即可。
 
 ##### 3. 储户提现
 >cleos push action **eosiocpubank** withdraw '["你的账号","10.0000 EOS"]' -p 你的账号 
@@ -39,7 +40,6 @@
 0.1 EOS | 30.4166 EOS CPU | 1天 | 
 0.1 EOS | 24.3333 EOS CPU | 3天 | 
 0.1 EOS | 18.2500 EOS CPU | 1周 | 
-0.1 EOS | 17.3152 EOS CPU | 1周以上 | 
 
 ### 储蓄分红结算
 
