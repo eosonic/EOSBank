@@ -19,8 +19,10 @@
 > cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "3d"   
 > cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "7d"  
 
-##### 2. 储蓄  
-向合约账户：**eosiocpubank** 转入EOS,memo写：deposit，最低储值10EOS,每笔租赁成交后，获取的分红自动转为储蓄，注意，转账少于10个EOS将会失败，如果不写备注MEMO，将会自动为你租赁CPU资源，请参阅上一条。命令行方式如下所示： 
+##### 2. 储蓄（余额宝模式）  
+向合约账户：**eosiocpubank** 转入EOS,memo写：deposit，最低储值10EOS,每笔租赁成交后，获取的分红自动转为储蓄，注意，转账少于10个EOS将会失败，如果不写备注MEMO，将会自动为你租赁CPU资源，请参阅上一条。
+
+命令行储蓄如下所示： 
 > cleos transfer 你的账号 eosiocpubank "100 EOS" "deposit"
 
 查询余额（储值+分红）
@@ -29,6 +31,10 @@
 超过5000EOS币的储蓄，请通过创建权限delegate和undelegage完成权限隔离，仅需要将这两个权限授权给我们即可。请您准备一对全新的公钥私钥，并请跟我们联系，我们会提供设置帮助。
 
 ##### 3. 储户提现
+
+钱包提款方式：使用任何EOS钱包，任何钱包！向合约**eosiocpubank**发送0.0001个币（其他数额命令无效），备注MEMO留空不写任何字，合约全自动提现到发送的账户，我们会检测你是否有存款，如果有存款，立刻发送存款+分红命令一次付清。由于EOS赎回抵押需要3天，我们发送后三天到账。
+
+命令行提款方式：
 >cleos push action **eosiocpubank** withdraw '["你的账号","10.0000 EOS"]' -p 你的账号 
 
 根据EOS主网的设定，提现延迟3天，自动到账,如需查询提现进度： 
