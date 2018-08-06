@@ -80,7 +80,7 @@ Everyday UTC16:00-UTC16:01 在银行打烊的一分钟时间内，合约会自�
   	
 ### 开源方式 
 - 本文档合约操作流程和合约功能已尽详, 已属于半开源模式。 
-- 合约hash：5a105361718841eda4e30446bc4afc80a7379876bfccb8e790d9686c828d33dc 
+- 合约hash：f312f47316a3aabd336abc92f26d2bc3491ae9bf17eadc7bef124797b33a52ad 
 - 如需详细资料，[请点击查看](https://eospark.com/MainNet/contract/eosiocpubank)合约ABI接口。 
 - 等待Block.one官方合约审查系统, 我们将立即提交实名制和代码双重审查。 
 
