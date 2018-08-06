@@ -75,7 +75,7 @@
 4. 点击Send One
 5. 等待几秒后，在Body里，amount会显示储蓄余额+分红数值，图例为显示了账号cpubankfound的余额，请更改为你的账号。  
   
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/deposit3.png)  
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/deposit.png)  
 ### 提现和查询提现进度：
  
 如你需要提现你的存款，柚资银行仅支持一次性提取所有余额+分红，方法是，请使用任意EOS钱包发送0.0001个EOS币到柚资银行eosiocpubank即可进入提现队列，注意，请勿写入任何备注MEMO，根据EOS网络设定，解除抵押需要等待3天，合约将在3天后自动发送你所有的EOS币到你的账号，使用命令行来提现：
