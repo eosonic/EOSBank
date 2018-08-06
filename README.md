@@ -61,22 +61,32 @@
 2. 选择post，在URL一栏输入https://api.eosnewyork.io/v1/chain/get_table_rows
 3. 在Request Body一栏输入：{"json":"true","code":"eosiocpubank","scope":"这里输入你的EOS存款账号","table":"deposit"}
 4. 点击Send One
-5. 等待几秒后，在Body里，amount会显示储蓄余额+分红数值。  
+5. 等待几秒后，在Body里，amount会显示储蓄余额+分红数值，图例为显示了账号cpubankfound的余额，请更改为你的账号。  
   
 ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/deposit.png)  
-### 查询提现进度：
+### 提现和查询提现进度：
+ 
+如你需要提现你的存款，柚资银行仅支持一次性提取所有余额+分红，方法是，请使用任意EOS钱包发送0.0001个EOS币到柚资银行eosiocpubank即可进入提现队列，注意，请勿写入任何备注MEMO，你也可以使用命令行来提现，根据EOS网络设定，解除抵押需要等待3天，合约将在3天后自动发送你所有的EOS币到你的账号，提现进度查询方式如下：  
+
+> cleos transfer 你的账号 **eosiocpubank** "0.0001 EOS" ""    
   
-使用命令行模式：  
+使用命令行模式查询提现进度：  
   
 >cleos get table **eosiocpubank** 你的账号 refunds  
 
-如果你没有EOS软件，也没有Cleos命令的发送工具，请执行以下动作查询你的存款；
+如果你没有EOS软件，也没有Cleos命令的发送工具，请执行以下动作查询你的提现进度；
   
 1. 打开API查询网站 http://apirequest.io/
 2. 选择post，在URL一栏输入https://api.eosnewyork.io/v1/chain/get_table_rows
 3. 在Request Body一栏输入：{"json":"true","code":"eosiocpubank","scope":"这里输入你的EOS存款账号","table":"refunds"}
 4. 点击Send One
 5. 等待几秒后，在Body里，request_time会显示还有多久你的提现会到达你的账户。
+
+### 解除我的提现
+
+如果你在提现命令发送后的72小时内想要取消你的提现，请使用任意EOS钱包发送0.0002个EOS币到柚资银行eosiocpubank即可取消你的提现请求，注意，请勿写入任何备注MEMO，你也可以使用命令行来取消提现命令，这是立即生效的，你将会立即参与下一次租单的分红并获得收益。
+
+> cleos transfer 你的账号 **eosiocpubank** "0.0002 EOS" ""      
 
 ### 柚资银行优势
 
