@@ -50,7 +50,7 @@
 
 使用任意EOS钱包，向合约账户：**eosiocpubank** 转入大于10个EOS，必须小于1000个EOS，备注MEMO写上deposit,支持任意笔存款转账，它们都会记录在你的账号下。不支持替其他账户存款，备注MEMO仅支持写入deposit，参见上一章节，如果柚资银行资金池满了，则无法接受储蓄，智能合约将会自动拒绝客户存款。请等待银行储蓄降低后操作储蓄。 
   
-  ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/deposi2t.png)
+  ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/deposit2.png)
 
 
 ### 分红结算模型
