@@ -1,7 +1,7 @@
 ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner.png)
  
    
-## 柚资银行 EOS Bank [![Bank Stutas](https://github.com/eosonic/EOSBank/blob/master/image/bankopen.png)]  
+## 柚资银行 EOS Bank ![Bank Stutas](https://github.com/eosonic/EOSBank/blob/master/image/bankopen.png)  
 
 柚资银行是EOS网络基础设施，它允许DApp开发者支付极少的利息获得大量CPU计算资源，这些利息将会支付给银行的所有储户，这些租赁交易通过智能合约执行。
 
