@@ -61,8 +61,9 @@
 2. 选择post，在URL一栏输入https://api.eosnewyork.io/v1/chain/get_table_rows
 3. 在Request Body一栏输入：{"json":"true","code":"eosiocpubank","scope":"这里输入你的EOS存款账号","table":"deposit"}
 4. 点击Send One
-5. 等待几秒后，在Body里，amount会显示储蓄余额+分红数值。
-
+5. 等待几秒后，在Body里，amount会显示储蓄余额+分红数值。  
+  
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/deposit.png)  
 ### 查询提现进度：
   
 使用命令行模式：  
