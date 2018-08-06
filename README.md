@@ -12,19 +12,19 @@
 ### 操作说明
 
 ##### 1. 租赁
-使用任意EOS钱包，向合约账户：**eosiocpubank** 转入少量EOS，资源倍数请参阅下一章节**当前租赁价格**，合约将会自动为你计算租赁数量，并抵押EOS使你获得CPU计算资源，0.5秒抵押到账。  
+使用任意EOS钱包，向合约账户：**eosiocpubank** 转入少量EOS，资源倍数请参阅下一章节**当前租赁价格**，合约将会自动为你计算租赁数量，并抵押EOS使你获得CPU计算资源，0.5秒后抵押到账。  
   
-转账备注MEMO为空时默认租赁24小时。如需租赁3天或7天请在转账MEMO写入3d/7d，下图是使用钱包租赁3天：   
+转账数量决定了获得CPU抵押的数量，例如：转入0.05个币将立即为你抵押15.283CPU资源，备注MEMO可以写入你需要的租赁时间，备注为空时，默认租赁24小时。备注写上“3d/7d”,将会自动为你抵押3天/7天,下图是使用钱包操作转账，这将立即获得15.283EOS的CPU资源维持3天：   
   
-  ![rent](https://github.com/eosonic/EOSBank/blob/master/image/rent.png)
+![rent](https://github.com/eosonic/EOSBank/blob/master/image/rent.png)
   
-命令行操作如下：
-    
-> **租赁24小时** cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" ""       
-> **租赁3天**    cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "3d"      
-> **租赁7天**    cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "7d"      
+命令行操作：
   
-提醒：由于EOS网络存在大量发送0.0001个EOS的广告行为，柚资银行目前支持的最低租赁发送0.01 EOS，我们推荐发送0.05，使你获得15.28个EOS的CPU计算资源。
+> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" ""       
+> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "3d"      
+> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "7d" 
+  
+提醒：由于EOS网络存在大量发送0.0001个EOS的广告行为，柚资银行目前支持的最低租赁发送0.01 EOS，我们推荐发送0.05，使你获得15.283个EOS的CPU计算资源。
 
 ### 当前租赁价格
 
