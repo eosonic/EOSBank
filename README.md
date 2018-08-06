@@ -34,13 +34,48 @@
 0.1 EOS | 24.3333 EOS CPU | 3天 | 
 0.1 EOS | 18.2500 EOS CPU | 1周 | 
 
-### 储蓄分红结算
+### 动态储蓄模型
+合约eosiocpubank支持储蓄你的EOS币到银行，每当有任意租单成交，我们会立即分红给每一个储蓄的账号。
+
+为了保持储蓄的收益率稳定，我们限制了储蓄池的大小，当合约eosiocpubank的unstaked小于5000.0000EOS，合约将会自动开放存款功能，这被视为银行缺乏资金需要补充，你可以转账大于10个EOS币到合约，在备注MEMO里写入“deposit”（没有双引号）。这将会被记录为存款。
+
+相反的，每当合约 eosiocpubank的unstaked大于5000.0000个EOS，合约自动关闭存款功能，你将会无法把EOS币发送给银行，任何在备注内包含deposit的转账将会被系统自动拒收。我们以此来保持银行资金池的大小在合适的状态，以防止由于存款过多导致所有储户的收益率下降。
+
+### 分红结算模型
 
 一笔租赁交易达成收到的利息为L，我们将会对当前储蓄资产进行快照，设定平台储蓄总余额为N，某客户储蓄为A，则客户根据储蓄数量A，此次租赁立即获得A/N**L**利息分红。  
+
 你存款利息的总收入受到动态的出租率影响，假设平台有1万个EOS币，你储蓄了5000个，当我们出租出去7500个时候，你获得的实际利息是22.5%，也即，设定利率**乘以**出租率=实际利率。
 
-分红计算模型：
-我们收到一笔10个币的租赁请求，计算平台目前unstaked是5000个币，储户在平台存储了100个币，则A/NL=100储蓄/5000总额X10利息=0.2EOS,即：用户由于这一笔租赁立刻收到0.2个币的分红，每次出租我们都根据当前快照结算一次分红。
+实际计算展示：
+我们收到一笔10个币的租赁请求，计算平台目前unstaked是5000个币，储户在平台存储了100个币，则A/NL=100储蓄/5000总额X10利息=0.2EOS,即：用户由于这一笔租赁立刻收到0.2个币的分红，每次出租我们都根据当前快照结算一次分红。这种快照型分红跟租赁利率没有任何关系。
+
+### 查询你的储蓄和分红
+
+##### 1. 使用命令行模式：  
+
+>cleos get table **eosiocpubank** 你的账号 deposit    
+  
+如果你没有EOS软件，也没有Cleos命令的发送工具，请执行以下动作查询你的存款；
+1. 打开API查询网站 http://apirequest.io/
+2. 选择post，在URL一栏输入https://api.eosnewyork.io/v1/chain/get_table_rows
+3. 在Request Body一栏输入：{"json":"true","code":"eosiocpubank","scope":"这里输入你的EOS存款账号","table":"deposit"}
+4. 点击Send One
+5. 等待几秒后，在Body里，amount会显示储蓄余额+分红数值。
+
+##### 2. 查询提现进度：
+  
+使用命令行模式：  
+  
+>cleos get table **eosiocpubank** 你的账号 refunds  
+
+如果你没有EOS软件，也没有Cleos命令的发送工具，请执行以下动作查询你的存款；
+  
+1. 打开API查询网站 http://apirequest.io/
+2. 选择post，在URL一栏输入https://api.eosnewyork.io/v1/chain/get_table_rows
+3. 在Request Body一栏输入：{"json":"true","code":"eosiocpubank","scope":"这里输入你的EOS存款账号","table":"refunds"}
+4. 点击Send One
+5. 等待几秒后，在Body里，request_time会显示还有多久你的提现会到达你的账户。
 
 ### 游资银行优势
 
