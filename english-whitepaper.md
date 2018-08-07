@@ -69,7 +69,7 @@ The interest received by the completion of A leasing transaction is L, and we wi
 Your total interest income is affected by the dynamic rental rate. Let's say the platform has 10,000 EOS , you save 5,000, and when we rent out 7,500, you get 22.5% real interest, that is, set the interest rate **multiply** the rental rate is equal to the real interest rate.
 Actual calculation demonstration:
 
-We received A lease request of 10 COINS. At present, the computing platform unstaked was 5000 EOS, and the customer stored 100 EOS on the platform. Then A/NL=100 savings /5000 total amount X10 interest =0.2EOS.This snapshot dividend has nothing to do with rental rates.
+We received A lease request of 10 EOS. At present, the computing platform unstaked was 5000 EOS, and the customer stored 100 EOS on the platform. Then A/NL=100 savings /5000 total amount X10 interest =0.2EOS.This snapshot dividend has nothing to do with rental rates.
 
 ### Check your savings and dividends
 
@@ -93,7 +93,7 @@ If you need to withdraw,bank support only one-time extract all add attach bonuse
   
 After the withdrawal command is sent, use the command line mode to query the withdrawal progress:  
   
->cleos get table **eosiocpubank** 你的账号 refunds  
+>cleos get table **eosiocpubank** youraccount refunds  
 
 If you don't have an EOS software or a delivery tool for the Cleos command, perform the following steps to query your withdrawal;
   
@@ -112,7 +112,7 @@ If within 72 hours after the withdrawal order to send you want to cancel your wi
 
 ### EOS Banks advantages
     
- - #### Strong capital adequacy  
+- #### Strong capital adequacy  
   
 We support customers to save their EOS in amounts greater than 10 EOS. We will return the interest income to the savers.Diversified sources of funds, strong capital guarantee, fully guarantee the rapidly changing rental demand.
 
@@ -124,13 +124,13 @@ In response to rental requests with smart contracts, anyone can send EOS to the 
   
 At the same time, it can meet the temporary resource demand and long-term resource leasing demand of customers, and the intelligent contract will automatically quote according to the required cycle.
   
-- ### full automatic dynamic highly liquid asset commitment pool
+- #### full automatic dynamic highly liquid asset commitment pool
   
 Automatic pools of saving control model, rapid automatic entrust the second mortgage and the mortgage, so fast the business model makes the operation of the contract is busy, a series of dynamic financial models, make pomelo endowment bank capital will have high turnover rate, and yield reached the highest state of low rental prices but at the same time.This would provide high returns to savers and also lower prices for users.
   
-- contract developer of the real name system
+- #### contract developer of the real name system
   
-In order to maintain the security of funds, for large depositors, we used the account permission isolation mechanism. The contract eosiocpubank does not have the permission to transfer EOS COINS, which fundamentally prevents the theft of large funds. Meanwhile, we disclosed the team developer's identity information for inquiry.
+In order to maintain the security of funds, for large depositors, we used the account permission isolation mechanism. The contract eosiocpubank does not have the permission to transfer EOS EOS, which fundamentally prevents the theft of large funds. Meanwhile, we disclosed the team developer's identity information for inquiry.
 
 ### VIP services
   
@@ -138,35 +138,38 @@ If you are a depth of EOS game players, or are you a quantitative robot operatio
 
 ### Bank closing time
   
-Just as the traditional bank needs to settle, the pomelo bank will close for one minute every day at utc16:00-utc16:01, during which time the contract will automatically reject all rental demands.The pomelo bank's smart contracts begin to self-audit all of the movements of the day, generating reports for manual review and analysis of the bank's business status.
+Just as the traditional bank needs to settle, the EOS bank will close for one minute every day at utc16:00-utc16:01, during which time the contract will automatically reject all rental demands.The EOS bank's smart contracts begin to self-audit all of the movements of the day, generating reports for manual review and analysis of the bank's business status.
 
 ### FAQ
+
+- Where it APP download URL?
+NO!we are automatic smart contract,no any app,you can use any EOS wallet to operate.
   
-- why do I need to rent the CPU instead of buying it?  
-Most people are not every day need CPU resources, broke out in a short time of CPU demand will take up a lot of money, we offer 1 day / 1/3 days weeks of short-term lease contract, under the assumption that World Cup coming and you need to send ads, then send a EOS COINS will be provided to you 304.1 COINS of CPU resources and keep all day, you don't have to mortgage 304.1 EOS and wait for three day of redemption.You can even get 3.041 credits by sending just 0.01.
+- Why do I need to rent the CPU instead of buying it?  
+Most people are not every day need CPU resources, broke out in a short time of CPU demand will take up a lot of money, we offer 1 day / 1/3 days weeks of short-term lease contract, under the assumption that World Cup coming and you need to send ads, then send a EOS will be provided to you 304.1 EOS of CPU resources and keep all day, you don't have to delegate 304.1 EOS and wait for three day of undeledage.You can even get 3.041 credits by sending just 0.01.
   
-- can I rent CPU resources to other accounts?  
+- Can I rent CPU resources to other accounts?  
 Of course, if you put the account name in the MEMO, we will mortgage the resources on the account you wrote. Currently, only 12-bit accounts are supported.
   
--i'm done with it. Do I need to return anything?  
+- I'm done with it. Do I need to return anything?  
 You don't need to do anything, and the smart contract automatically reclaims resources after the lease expires.
   
-- how to rent the CPU more cost-effectively?  
+- How to rent the CPU more cost-effectively?  
 The longer the lease, the lower the cost of the lease, obviously, the less it would cost to lease seven days a week.That's true in the hospitality industry, where it's obviously cheaper to book a room for a long time than to stay for just one day.Of course, if you don't have to lease for that long, a temporary lease is still more cost-effective when you do.If you are busy with business and have special requirements for resources, please refer to the chapter of this document "high-end financial services".
   
 - why can't I save?The transfer failed.  
-Pomelo bank adopts the industry-leading dynamic savings model. When the capital of pomelo bank exceeds 5000000 EOS, it will automatically reject the customer's savings. No one can send EOS COINS to the contract account.You will be able to send EOS storage, but please note that the amount you send does not make the pomelo bank's capital pool larger than 5000.0000.
+EOS bank adopts the industry-leading dynamic savings model. When the capital of EOS bank exceeds 5000000 EOS, it will automatically reject the customer's savings. No one can send EOS to the contract account.You will be able to send EOS storage, but please note that the amount you send does not make the EOS bank's capital pool larger than 5000.0000 EOS.
 
 ### Open source
   
-- contract hash: 6 d5b1df36c76446542689e6f8c6b956373326961c09232149dbd3710abeed6cb
-- the contract operation process and functions of pomelo bank are detailed and are already in the semi-open source mode. Just like all traditional Banks will not open the risk control model inside the bank, we will only submit the code to block. one for review.
-- if you need detailed information, please click to view] (https://eospark.com/MainNet/contract/eosiocpubank) ABI interface contract.
-- waiting for the official contract review system of block. one, we will immediately submit the real-name system and code safety double review.
+- Contract hash: 6 d5b1df36c76446542689e6f8c6b956373326961c09232149dbd3710abeed6cb
+- The contract operation process and functions of EOS bank are detailed and are already in the semi-open source mode. Just like all traditional Banks will not open the risk control model inside the bank, we will only submit the code to block. one for review.
+- If you need detailed information, please click to view] (https://eospark.com/MainNet/contract/eosiocpubank) ABI interface contract.
+- Waiting for the official contract review system of block. one, we will immediately submit the real-name system and code safety double review.
 
 ### Contact US
 - EOSonic@outlook.com
 - Wechat @ eosiobank/auoka -
-For details, please refer to https://hoo.com/
+
 ---
 ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/EOSBank.png)
