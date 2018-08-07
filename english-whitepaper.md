@@ -19,7 +19,7 @@ MEMO: "3d/7d" will automatically delegate you for 3 days /7 days. Below is the t
   
 ![rent](https://github.com/eosonic/EOSBank/blob/master/image/rent.png)
   
-command line：
+Use command line mode:
   
 > cleos transfer youraccount **eosiocpubank** "0.1 EOS" ""       
 > cleos transfer youraccount **eosiocpubank** "0.1 EOS" "3d"      
@@ -33,7 +33,7 @@ If you need to rent CPU for other accounts, please write the account name in the
   
 Caution: due to the large number of SPAM sending 0.0001 EOS on EOS blockchain, the lowest rental supported by EOS bank currently sends 0.01 EOS. We recommend sending 0.05, enabling you to get 15.283 CPU resources for EOS.
 
-### current lease price
+### Current lease price
 
 sent | get CPU | duration | 
 ------------ | -------------|-------------
@@ -41,60 +41,68 @@ sent | get CPU | duration |
 0.1 EOS | 24.3333 EOS CPU | 3 days | 
 0.1 EOS | 18.2500 EOS CPU | 1 week | 
 
-### 动态储蓄模型
-柚资银行合约eosiocpubank支持储蓄你的EOS币到银行，每当有任意租单成交，我们会立即分红给每一个储蓄的账号。
+### Dynamic savings model
 
-为了保持储蓄的收益率稳定，我们限制了储蓄池的大小，当合约eosiocpubank的unstaked小于5000.0000EOS，合约将会自动开放存款功能，这被视为银行缺乏资金需要补充，你可以转账大于10个EOS币到合约，在备注MEMO里写入“deposit”（没有双引号）。这将会被记录为存款。
+EOS bank contract eosiocpubank supports saving your EOS currency to the bank, whenever there is any lease transaction, we will immediately dividends to each savings account.
 
-相反的，每当合约 eosiocpubank的unstaked大于5000.0000个EOS，合约自动关闭存款功能，你将会无法把EOS币发送给银行，任何在备注内包含deposit的转账将会被系统自动拒收。我们以此来保持银行资金池的大小在合适的状态，以防止由于存款过多导致所有储户的收益率下降。
+In order to keep the rate of return of savings stable, we limited the size of the savings pool. When the unstaked of the contract eosiocpubank is less than 5000.0000 EOS, the contract will automatically open the deposit, which is regarded as the bank's lack of funds needs to be supplemented. You can transfer more than 10 EOS to the contract, and write "deposit" in the MEMO (no double quotation marks).This will be recorded as a deposit.
 
-### 储蓄操作说明
+In contrast, whenever the unstaked account of the contract eosiocpubank is larger than 5000.0000 EOS, the contract automatically closes the deposit , you will be unable to send the EOS to the bank, and any transfer that includes deposit in the remarks will be automatically rejected by the system.
 
-使用任意EOS钱包，向合约账户：**eosiocpubank** 转入大于10个EOS，必须小于1000个EOS，备注MEMO写上deposit,支持任意笔存款转账，它们都会记录在你的账号下。不支持替其他账户存款，备注MEMO仅支持写入deposit，参见上一章节，如果柚资银行资金池满了，则无法接受储蓄，智能合约将会自动拒绝客户存款。请等待银行储蓄降低后操作储蓄。 
+This keeps the Banks' savings pools at the right size to prevent yields on all savers from falling because of excess deposits.
+
+### How to saving
+
+Use any EOS wallet to sent to contract account: **eosiocpubank** transfer more than 10 EOS, must be less than 1000 EOS, MEMO deposit, support any deposit sent, they will be recorded under your account.
+  
+Deposit is not supported for other accounts. The MEMO can only be written into deposit. Please refer to the previous chapter.wait for bank savings to be reduced before operating savings.
+
+In the previous chapter, if the EOS bank's saving pool is full(more than 5000EOS), it will be unable to accept savings, and the smart contract will automatically refuse customer deposits.Please wait for bank savings to be reduced before operating savings.
   
   ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/deposit2.png)
 
 
-### 分红结算模型
+### Dividend settlement model
 
-一笔租赁交易达成收到的利息为L，我们将会对当前储蓄资产进行快照，设定平台储蓄总余额为N，某客户储蓄为A，则客户根据储蓄数量A，此次租赁立即获得A/N**L**利息分红。  
+The interest received by the completion of A leasing transaction is L, and we will take a snapshot of the current savings assets, set the total balance of platform savings as N, and A customer savings as A, then the customer will get A/NL interest dividend immediately according to the amount of savings A.
 
-你存款利息的总收入受到动态的出租率影响，假设平台有1万个EOS币，你储蓄了5000个，当我们出租出去7500个时候，你获得的实际利息是22.5%，也即，设定利率**乘以**出租率=实际利率。
+Your total interest income is affected by the dynamic rental rate. Let's say the platform has 10,000 EOS , you save 5,000, and when we rent out 7,500, you get 22.5% real interest, that is, set the interest rate **multiply** the rental rate is equal to the real interest rate.
+Actual calculation demonstration:
 
-实际计算展示：
-我们收到一笔10个币的租赁请求，计算平台目前unstaked是5000个币，储户在平台存储了100个币，则A/NL=100储蓄/5000总额X10利息=0.2EOS,即：用户由于这一笔租赁立刻收到0.2个币的分红，每次出租我们都根据当前快照结算一次分红。这种快照型分红跟租赁利率没有任何关系。
+We received A lease request of 10 COINS. At present, the computing platform unstaked was 5000 EOS, and the customer stored 100 EOS on the platform. Then A/NL=100 savings /5000 total amount X10 interest =0.2EOS.This snapshot dividend has nothing to do with rental rates.
 
 ### 查询你的储蓄和分红
 
-使用命令行模式：  
+Use command line mode:  
 
->cleos get table **eosiocpubank** 你的账号 deposit    
+>cleos get table **eosiocpubank** youraccount deposit    
   
-如果你没有EOS软件，也没有Cleos命令的发送工具，请执行以下动作查询你的存款；
-1. 打开API查询网站 http://apirequest.io/
-2. 选择post，在URL一栏输入https://api.eosnewyork.io/v1/chain/get_table_rows
-3. 在Request Body一栏输入：{"json":"true","code":"eosiocpubank","scope":"这里输入你的EOS存款账号","table":"deposit"}
-4. 点击Send One
-5. 等待几秒后，在Body里，amount会显示储蓄余额+分红数值，图例为显示了账号cpubankfound的余额，请更改为你的账号。  
+If you don't have an EOS software or a delivery tool for the Cleos command, perform the following steps to query your deposits;
+1. Open the API query website: http://apirequest.io/
+2. Select post, type https://api.eosnewyork.io/v1/chain/get_table_rows in the URL column
+3. in the Request Body,input：{"json":"true","code":"eosiocpubank","scope":"youraccount","table":"deposit"}
+4. click Send One
+5. After waiting for a few seconds, in the Body, the amount will show the saving balance and the dividend, and the illustration shows the balance of the account cpubankfound. Please change it to your account.  
   
 ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/deposit.png)  
-### 提现和查询提现进度：
- 
-如你需要提现你的存款，柚资银行仅支持一次性提取所有余额+分红，方法是，请使用任意EOS钱包发送0.0001个EOS币到柚资银行eosiocpubank即可进入提现队列，注意，请勿写入任何备注MEMO，根据EOS网络设定，解除抵押需要等待3天，合约将在3天后自动发送你所有的EOS币到你的账号，使用命令行来提现：
+### Withdrawal and enquiry of withdrawal progress:
   
-> cleos transfer 你的账号 **eosiocpubank** "0.0001 EOS" ""    
+If you need to withdraw,bank support only one-time extract all add attach bonuses,use any EOS wallet send 0.0001 EOS to the contract eosiocpubank can withdraw funds into the queue, attention, please do not write any note MEMO, according to the EOS system setting, lift the mortgage needs to wait for 3 days, the contract will automatically send you in 3 days all EOS to your account,use the command line:
   
-提现命令发送后，使用命令行模式查询提现进度：  
+> cleos transfer youraccount **eosiocpubank** "0.0001 EOS" ""    
+  
+After the withdrawal command is sent, use the command line mode to query the withdrawal progress:  
   
 >cleos get table **eosiocpubank** 你的账号 refunds  
 
-如果你没有EOS软件，也没有Cleos命令的发送工具，请执行以下动作查询你的提现进度；
+If you don't have an EOS software or a delivery tool for the Cleos command, perform the following steps to query your withdrawal;
   
-1. 打开API查询网站 http://apirequest.io/
-2. 选择post，在URL一栏输入https://api.eosnewyork.io/v1/chain/get_table_rows
-3. 在Request Body一栏输入：{"json":"true","code":"eosiocpubank","scope":"这里输入你的EOS存款账号","table":"refunds"}
-4. 点击Send One
-5. 等待几秒后，在Body里，request_time会显示还有多久你的提现会到达你的账户。
+If you don't have an EOS software or a delivery tool for the Cleos command, perform the following steps to query your deposits;
+1. Open the API query website: http://apirequest.io/
+2. Select post, type https://api.eosnewyork.io/v1/chain/get_table_rows in the URL column
+3. in the Request Body,input：{"json":"true","code":"eosiocpubank","scope":"youraccount","table":"refunds"}
+4. click Send One
+5. After waiting for a few seconds,request_time will show how long it will be before your withdrawal reaches your account.This is a UNIX time.
 
 ### 解除提现申请
 
