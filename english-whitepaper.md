@@ -9,11 +9,13 @@ EOS bank is the infrastructure of EOS blockchain, which allows DApp developers t
 ### Demand analysis
 With the development of EOS ecology, EOS CPU resources will become more and more expensive, and the CPU needs of many developers are not sustainable, and a lot of CPU needs will be exploded in a short time.In response to the massive CPU resources needed for a short-term promotion during the World Cup/Christmas, the EOS bank serves as the infrastructure for the EOS blockchain to provide short-term, rapid rental of CPU resources.
 
-### 租赁操作说明
-
-使用任意EOS钱包，向合约账户：**eosiocpubank** 转入少量EOS，资源倍数请参阅下一章节**当前租赁价格**，合约将会自动为你计算租赁数量，并抵押EOS使你获得CPU计算资源，0.5秒后抵押到账，你甚至可以在备注里写其他账号名字，我们将为你写的的这个账号提供租赁，不写账号名默认租赁给你自己。  
+### How to used
   
-转账数量决定了获得CPU抵押的数量，例如：转入0.05个币将立即为你抵押15.283CPU资源，备注MEMO可以写入你需要的租赁时间，备注为空时，默认租赁24小时。备注写上“3d/7d”,将会自动为你抵押3天/7天,下图是使用钱包操作转账，这将立即获得15.283EOS的CPU资源维持3天。   
+Use any EOS wallet app, to the account of the contract: eosiocpubank sent alittle EOS, multiple CPU please see the next section of the current lease price, number will be automatically calculated for you the lease contract, and the delegate EOS you get CPU resources, 0.5 seconds after the delegate to the account, you can even write other account name in MEMO, we will write to you this account provides leasing, don't write the default account name lease give yourself.
+  
+The amount of EOS transferred determines the amount of CPU delegate. For example, the transfer of 0.05 EOS will immediately delegate 15.283CPU resources for you. The MEMO can be written to the lease time you need.
+  
+MEMO: "3d/7d" will automatically delegate you for 3 days /7 days. Below is the transfer using wallet, which will immediately get 15.283EOS CPU resources for 3 days. 
   
 ![rent](https://github.com/eosonic/EOSBank/blob/master/image/rent.png)
   
