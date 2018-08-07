@@ -1,13 +1,13 @@
 ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner.png)
  
    
-## EOS Bank 柚资银行  
+## EOS Bank
 ![Bank Stutas](https://github.com/eosonic/EOSBank/blob/master/image/open.png) 
 
-柚资银行是EOS网络基础设施，它允许DApp开发者支付极少的利息获得大量CPU计算资源，这些利息将会支付给银行的所有储户，这些租赁交易通过智能合约执行。
+EOS bank is the infrastructure of EOS blockchain, which allows DApp developers to pay minimal interest on a large amount of CPU resources that will be paid to all of the bank's depositors, and these lease transactions are executed through smart contracts.
 
-### 需求分析
-随着EOS生态的发展，EOS计算资源将会变得越来越昂贵，很多开发者的计算需求并不持续，往往存在短时间内爆发出大量计算需求。在世界杯/圣诞节期间，短期的促销需要大量计算资源，为了应对这样的需求，柚资银行作为EOS网络的基础设施，提供计算资源的短期快速租赁。
+### Demand analysis
+With the development of EOS ecology, EOS CPU resources will become more and more expensive, and the CPU needs of many developers are not sustainable, and a lot of CPU needs will be exploded in a short time.In response to the massive CPU resources needed for a short-term promotion during the World Cup/Christmas, the EOS bank serves as the infrastructure for the EOS blockchain to provide short-term, rapid rental of CPU resources.
 
 ### 租赁操作说明
 
