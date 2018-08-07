@@ -71,7 +71,7 @@ Actual calculation demonstration:
 
 We received A lease request of 10 COINS. At present, the computing platform unstaked was 5000 EOS, and the customer stored 100 EOS on the platform. Then A/NL=100 savings /5000 total amount X10 interest =0.2EOS.This snapshot dividend has nothing to do with rental rates.
 
-### 查询你的储蓄和分红
+### Check your savings and dividends
 
 Use command line mode:  
 
@@ -104,63 +104,69 @@ If you don't have an EOS software or a delivery tool for the Cleos command, perf
 4. click Send One
 5. After waiting for a few seconds,request_time will show how long it will be before your withdrawal reaches your account.This is a UNIX time.
 
-### 解除提现申请
+### cancel withdrawal application
 
-如果你在提现命令发送后的72小时内想要取消你的提现，请使用任意EOS钱包发送0.0002个EOS币到柚资银行eosiocpubank即可取消你的提现请求，注意，请勿写入任何备注MEMO，你也可以使用命令行来取消提现命令，这是立即生效的，你将会立即参与下一次租单的分红并获得收益。
+If within 72 hours after the withdrawal order to send you want to cancel your withdrawal, please use any EOS wallet send 0.0002 EOS to the contract eosiocpubank can cancel your withdrawal request, attention, please do not write any note MEMO, you can also use the command line to cancel the show command, this is effective immediately, you will immediately participate in rent and reap the benefits of share out bonus of single next time.
 
-> cleos transfer 你的账号 **eosiocpubank** "0.0002 EOS" ""      
+> cleos transfer youraccount **eosiocpubank** "0.0002 EOS" ""      
 
-### 柚资银行优势
-
-- #### 强大的资本充足率
-柚资银行拥有充足的固定资本，同时吸收EOS小额储蓄，我们支持客户以大于10个EOS的数量储蓄自己的EOS币，我们会把利息收入返还给储蓄者。多样的资金来源，强大的资本保证，充分保障快速变化的租赁需求。
-
-- #### 全自动执行租赁订单
-采用智能合约响应租赁请求，任何人可以发送EOS币到合约账户**eosiocpubank**，系统按照当前价格立即租赁CPU给发送的客户。
-
-- #### 先进的租赁周期算法
-同时满足客户的临时性资源需求和长周期资源租赁需求，智能合约按照需求的周期自动报价。
-
-- #### 全自动动态高流动性资产委托池
-全自动的资金池控制模型，全自动的快速委托秒级抵押和反抵押，如此快速的业务模型使得合约的运行非常繁忙，一系列动态的金融模型，使得柚资银行储蓄资本会拥有极高的周转率，同时收益率达到最高状态的同时租赁价格反而很低。这将给储蓄者带来高额回报，同样也降低了使用者的价格。
-
-- #### 实名制的合约开发者
-为了保持资金安全，对于大型储户，我们使用了账号权限隔离机制，合约eosiocpubank不拥有transfer EOS币的权限，这从根本上杜绝了大资金的被盗，同时，我们公开了团队开发者的身份信息以供查询。
-
-### 高端金融服务
-  
-如果您是EOS游戏深度玩家，或者你是量化操作机器人，时间不允许你频繁查询自己的资源状态，或者您的业务需要全天候可用，柚资银行提供高端定制服务，我们将会监控你的EOS账号，每当资源使用率超过95%，我们将会为你自动抵押CPU，使你处于“战神状态”，同样，当你业务下降之后，我们检测到你的资源使用率小于85%我们将会为你解除部分抵押，这种动态的抵押和反抵押操作使你提高租赁效率，大量节省了你的查询时间和抵押成本。请翻阅本文的最后一章，联系我们，将为你设计最佳的自动租赁模型。
-
-### 银行打烊时间 
-就像传统银行需要结算一样，柚资银行在每天的UTC16:00-UTC16:01将会打烊一分钟时间，在这个打烊的时间段内，合约会自动拒绝所有租赁需求。柚资银行的智能合约开始自我审查这一天的所有动作，生成报表以供人工审核分析银行的业务状态。
-
-### 常见问题  
-- 为什么我需要租赁CPU而不是购买？   
-大部分人并不是每天都需要CPU资源，在短时间内爆发出的CPU需求将会占用大量资金，我们提供1天/3天/1周的短期租赁合约，假设世界杯来临而你需要发送广告，那么发送1个EOS币将会给你提供304.1个币的CPU资源并维持一整天，你无须抵押304.1个EOS并且等待长达3天的赎回期。你甚至可以仅仅发送0.01个币而获得3.041个币的计算资源。
-  
-- 我可以给其他账号租赁CPU资源吗？  
-当然可以，如果你在MEMO备注里写入账号名称，我们将会把资源抵押在你写的这个账号上，目前仅仅支持12位长度的账号。
-
-- 我使用完毕了，我需要归还什么吗？  
-你不需要任何操作，智能合约会在租赁到期后自动收回资源。
+### EOS Banks advantages
     
-- 如何更划算的租赁CPU？  
-租赁周期越长租赁花费越低，很显然，租赁一周要比租赁7个1天的花费少得多。这在酒店业都是如此，长期订房显然比只住一天要便宜的多。当然，如果你不需要租赁那么久，依然是需要用的时候临时租赁更加划算。如果你业务繁忙对资源有特殊要求，请参阅本文档《高端金融服务》一章。
+ - #### Strong capital adequacy  
+  
+We support customers to save their EOS in amounts greater than 10 EOS. We will return the interest income to the savers.Diversified sources of funds, strong capital guarantee, fully guarantee the rapidly changing rental demand.
 
-- 为什么我无法存款？转账失败了。
-柚资银行采用业内领先的动态储蓄模型，当柚资银行的资本超过5000.0000EOS之后，柚资银行自动拒绝客户储蓄，任何人无法发送EOS币到合约账户，反之当银行资金池小于5000.0000的时候，储蓄合约自动开启。你将可以发送EOS存储，但请注意，你发送的数量无法使柚资银行的资金池大于5000.0000.
-  	
-### 开源方式 
-- 合约hash：6d5b1df36c76446542689e6f8c6b956373326961c09232149dbd3710abeed6cb
-- 柚资银行的合约操作流程和功能已尽详，已属于半开源模式，就像所有的传统银行不会放开参观银行内部的风控模型一样，我们仅会将代码提交Block.one审阅。
-- 如需详细资料，[请点击查看](https://eospark.com/MainNet/contract/eosiocpubank)合约ABI接口。 
-- 等待Block.one官方合约审查系统, 我们将立即提交实名制和代码安全双重审查。 
+Fully automatic lease order execution
 
-### 联系方式  
-- EOSonic@outlook.com 
-- Wechat@eosiobank/auoka-
+In response to rental requests with smart contracts, anyone can send EOS to the contract account **eosiocpubank**, and the system immediately delegate the CPU to the sent customer at the current price.
 
-#### 柚资银行是虎符钱包旗下DApp 详情参阅https://hoo.com/
+- #### Advanced leasing cycle algorithm
+  
+At the same time, it can meet the temporary resource demand and long-term resource leasing demand of customers, and the intelligent contract will automatically quote according to the required cycle.
+  
+- ### full automatic dynamic highly liquid asset commitment pool
+  
+Automatic pools of saving control model, rapid automatic entrust the second mortgage and the mortgage, so fast the business model makes the operation of the contract is busy, a series of dynamic financial models, make pomelo endowment bank capital will have high turnover rate, and yield reached the highest state of low rental prices but at the same time.This would provide high returns to savers and also lower prices for users.
+  
+- contract developer of the real name system
+  
+In order to maintain the security of funds, for large depositors, we used the account permission isolation mechanism. The contract eosiocpubank does not have the permission to transfer EOS COINS, which fundamentally prevents the theft of large funds. Meanwhile, we disclosed the team developer's identity information for inquiry.
 
+### VIP services
+  
+If you are a depth of EOS game players, or are you a quantitative robot operation, the time is not allow you to track the status of their resources frequently, or your business need round-the-clock availability, pomelo investment Banks to provide high-end custom service, we will monitor your EOS account, whenever resources utilization rate more than 95%, we will automatically mortgage CPU for you, make you in a state of "god of war", also, when you are in, we detect your resource utilization rate is less than 85% we will help you remove part of the mortgage, the dynamic of mortgage and the mortgage operation allows you to improve the efficiency of the lease,It saves you a lot of search time and mortgage costs.Please consult the last chapter of this article and contact us to design the best automatic rental model for you.
+
+### Bank closing time
+  
+Just as the traditional bank needs to settle, the pomelo bank will close for one minute every day at utc16:00-utc16:01, during which time the contract will automatically reject all rental demands.The pomelo bank's smart contracts begin to self-audit all of the movements of the day, generating reports for manual review and analysis of the bank's business status.
+
+### FAQ
+  
+- why do I need to rent the CPU instead of buying it?  
+Most people are not every day need CPU resources, broke out in a short time of CPU demand will take up a lot of money, we offer 1 day / 1/3 days weeks of short-term lease contract, under the assumption that World Cup coming and you need to send ads, then send a EOS COINS will be provided to you 304.1 COINS of CPU resources and keep all day, you don't have to mortgage 304.1 EOS and wait for three day of redemption.You can even get 3.041 credits by sending just 0.01.
+  
+- can I rent CPU resources to other accounts?  
+Of course, if you put the account name in the MEMO, we will mortgage the resources on the account you wrote. Currently, only 12-bit accounts are supported.
+  
+-i'm done with it. Do I need to return anything?  
+You don't need to do anything, and the smart contract automatically reclaims resources after the lease expires.
+  
+- how to rent the CPU more cost-effectively?  
+The longer the lease, the lower the cost of the lease, obviously, the less it would cost to lease seven days a week.That's true in the hospitality industry, where it's obviously cheaper to book a room for a long time than to stay for just one day.Of course, if you don't have to lease for that long, a temporary lease is still more cost-effective when you do.If you are busy with business and have special requirements for resources, please refer to the chapter of this document "high-end financial services".
+  
+- why can't I save?The transfer failed.  
+Pomelo bank adopts the industry-leading dynamic savings model. When the capital of pomelo bank exceeds 5000000 EOS, it will automatically reject the customer's savings. No one can send EOS COINS to the contract account.You will be able to send EOS storage, but please note that the amount you send does not make the pomelo bank's capital pool larger than 5000.0000.
+
+### Open source
+  
+- contract hash: 6 d5b1df36c76446542689e6f8c6b956373326961c09232149dbd3710abeed6cb
+- the contract operation process and functions of pomelo bank are detailed and are already in the semi-open source mode. Just like all traditional Banks will not open the risk control model inside the bank, we will only submit the code to block. one for review.
+- if you need detailed information, please click to view] (https://eospark.com/MainNet/contract/eosiocpubank) ABI interface contract.
+- waiting for the official contract review system of block. one, we will immediately submit the real-name system and code safety double review.
+
+### Contact US
+- EOSonic@outlook.com
+- Wechat @ eosiobank/auoka -
+For details, please refer to https://hoo.com/
 ---
 ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/EOSBank.png)
