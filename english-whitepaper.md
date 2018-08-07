@@ -38,7 +38,7 @@ Caution: due to the large number of SPAM sending 0.0001 EOS on EOS blockchain, t
 sent | get CPU | duration | 
 ------------ | -------------|-------------
 0.1 EOS | 30.4166 EOS CPU | 24 Hours  | 
-0.1 EOS | 24.3333 EOS CPU | 3days | 
+0.1 EOS | 24.3333 EOS CPU | 3 days | 
 0.1 EOS | 18.2500 EOS CPU | 1 week | 
 
 ### 动态储蓄模型
