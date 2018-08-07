@@ -19,27 +19,27 @@ MEMO: "3d/7d" will automatically delegate you for 3 days /7 days. Below is the t
   
 ![rent](https://github.com/eosonic/EOSBank/blob/master/image/rent.png)
   
-命令行操作：
+command line：
   
-> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" ""       
-> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "3d"      
-> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "7d" 
+> cleos transfer youraccount **eosiocpubank** "0.1 EOS" ""       
+> cleos transfer youraccount **eosiocpubank** "0.1 EOS" "3d"      
+> cleos transfer youraccount **eosiocpubank** "0.1 EOS" "7d" 
 
-如果你需要给其他账号租赁资源，请在备注里写账号名称即可:
+If you need to rent CPU for other accounts, please write the account name in the remarks:
   
-> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "youraccount"  
-> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "3d youraccount"      
-> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "7d youraccount" 
+> cleos transfer youraccount **eosiocpubank** "0.1 EOS" "youraccount"  
+> cleos transfer youraccount **eosiocpubank** "0.1 EOS" "3d youraccount"      
+> cleos transfer youraccount **eosiocpubank** "0.1 EOS" "7d youraccount" 
   
-提醒：由于EOS网络存在大量发送0.0001个EOS的广告行为，柚资银行目前支持的最低租赁发送0.01 EOS，我们推荐发送0.05，使你获得15.283个EOS的CPU计算资源。
+Caution: due to the large number of SPAM sending 0.0001 EOS on EOS blockchain, the lowest rental supported by EOS bank currently sends 0.01 EOS. We recommend sending 0.05, enabling you to get 15.283 CPU resources for EOS.
 
-### 当前租赁价格
+### current lease price
 
-发送 | 获得资源 | 租赁持续 | 
+sent | get CPU | duration | 
 ------------ | -------------|-------------
-0.1 EOS | 30.4166 EOS CPU | 1天 | 
-0.1 EOS | 24.3333 EOS CPU | 3天 | 
-0.1 EOS | 18.2500 EOS CPU | 1周 | 
+0.1 EOS | 30.4166 EOS CPU | 24 Hours  | 
+0.1 EOS | 24.3333 EOS CPU | 3days | 
+0.1 EOS | 18.2500 EOS CPU | 1 week | 
 
 ### 动态储蓄模型
 柚资银行合约eosiocpubank支持储蓄你的EOS币到银行，每当有任意租单成交，我们会立即分红给每一个储蓄的账号。
