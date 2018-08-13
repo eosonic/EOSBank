@@ -15,7 +15,7 @@
   
 转账数量决定了获得CPU抵押的数量，例如：转入0.05个币将立即为你抵押15.283CPU资源，备注MEMO可以写入你需要的租赁时间，备注为空时，默认租赁24小时。备注写上“4d/7d”,将会自动为你抵押4天/7天,下图是使用钱包操作转账，这将立即获得15.283EOS的CPU资源维持4天。   
   
-![rent](https://github.com/eosonic/EOSBank/blob/master/image/rent.png)
+![rent](https://github.com/eosonic/EOSBank/blob/master/image/rent4.png)
   
 命令行操作：
   
