@@ -20,13 +20,13 @@
 命令行操作：
   
 > cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" ""       
-> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "3d"      
+> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "4d"      
 > cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "7d" 
 
 如果你需要给其他账号租赁资源，请在备注里写账号名称即可:
   
 > cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "youraccount"  
-> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "3d youraccount"      
+> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "4d youraccount"      
 > cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "7d youraccount" 
   
 提醒：由于EOS网络存在大量发送0.0001个EOS的广告行为，柚资银行目前支持的最低租赁发送0.01 EOS，我们推荐发送0.05，使你获得15.283个EOS的CPU计算资源。
@@ -36,7 +36,7 @@
 发送 | 获得资源 | 租赁持续 | 
 ------------ | -------------|-------------
 0.1 EOS | 30.4166 EOS CPU | 1天 | 
-0.1 EOS | 24.3333 EOS CPU | 3天 | 
+0.1 EOS | 20.8571 EOS CPU | 4天 | 
 0.1 EOS | 18.2500 EOS CPU | 1周 | 
 
 ### 动态储蓄模型
