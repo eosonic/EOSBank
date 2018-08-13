@@ -15,20 +15,20 @@ Use any EOS wallet app, to the account of the contract: eosiocpubank sent alittl
   
 The amount of EOS transferred determines the amount of CPU delegate. For example, the transfer of 0.05 EOS will immediately delegate 15.283CPU resources for you. The MEMO can be written to the lease time you need.
   
-MEMO: "3d/7d" will automatically delegate you for 3 days /7 days. Below is the transfer using wallet, which will immediately get 15.283EOS CPU resources for 3 days. 
+MEMO: "3d/7d" will automatically delegate you for 4 days /7 days. Below is the transfer using wallet, which will immediately get 15.283EOS CPU resources for 4 days. 
   
 ![rent](https://github.com/eosonic/EOSBank/blob/master/image/rent.png)
   
 Use command line mode:
   
 > cleos transfer youraccount **eosiocpubank** "0.1 EOS" ""       
-> cleos transfer youraccount **eosiocpubank** "0.1 EOS" "3d"      
+> cleos transfer youraccount **eosiocpubank** "0.1 EOS" "4d"      
 > cleos transfer youraccount **eosiocpubank** "0.1 EOS" "7d" 
 
 If you need to rent CPU for other accounts, please write the account name in the remarks:
   
 > cleos transfer youraccount **eosiocpubank** "0.1 EOS" "youraccount"  
-> cleos transfer youraccount **eosiocpubank** "0.1 EOS" "3d youraccount"      
+> cleos transfer youraccount **eosiocpubank** "0.1 EOS" "4d youraccount"      
 > cleos transfer youraccount **eosiocpubank** "0.1 EOS" "7d youraccount" 
   
 Caution: due to the large number of SPAM sending 0.0001 EOS on EOS blockchain, the lowest rental supported by EOS bank currently sends 0.01 EOS. We recommend sending 0.05, enabling you to get 15.283 CPU resources for EOS.
@@ -38,7 +38,7 @@ Caution: due to the large number of SPAM sending 0.0001 EOS on EOS blockchain, t
 sent | get CPU | duration | 
 ------------ | -------------|-------------
 0.1 EOS | 30.4166 EOS CPU | 24 Hours  | 
-0.1 EOS | 24.3333 EOS CPU | 3 days | 
+0.1 EOS | 20.8571 EOS CPU | 4 days | 
 0.1 EOS | 18.2500 EOS CPU | 1 week | 
 
 ### Dynamic savings model
