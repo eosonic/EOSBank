@@ -162,8 +162,8 @@ EOS bank adopts the industry-leading dynamic savings model. When the capital of 
 
 ### Open source
   
-- Contract hash：85167ac58f2853ab920c0349a9de33d38b740aa3b72ab736c37f86089df5476b
-- lastest deploy Time:2018-08-13 11:40:55
+- Contract hash：40bc10984c596a9caeda33218af2bc10edc3c05499d73517d91dbe212f2d329a
+- lastest deploy Time:2018-08-15 00:10:02
 - The contract operation process and functions of EOS bank are detailed and are already in the semi-open source mode. Just like all traditional Banks will not open the risk control model inside the bank, we will only submit the code to block. one for review.
 - If you need detailed information, please click to view] (https://eospark.com/MainNet/contract/eosiocpubank) ABI interface contract.
 - Waiting for the official contract review system of block. one, we will immediately submit the real-name system and code safety double review.
