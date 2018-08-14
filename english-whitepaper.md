@@ -45,9 +45,9 @@ sent | get CPU | duration |
 
 EOS bank contract eosiocpubank supports saving your EOS currency to the bank, whenever there is any lease transaction, we will immediately dividends to each savings account.
 
-In order to keep the rate of return of savings stable, we limited the size of the savings pool. When the unstaked of the contract eosiocpubank is less than 5000.0000 EOS, the contract will automatically open the deposit, which is regarded as the bank's lack of funds needs to be supplemented. You can transfer more than 10 EOS to the contract, and write "deposit" in the MEMO (no double quotation marks).This will be recorded as a deposit.
+In order to keep the rate of return of savings stable, we limited the size of the savings pool. When the unstaked of the contract eosiocpubank is less than 50000.0000 EOS, the contract will automatically open the deposit, which is regarded as the bank's lack of funds needs to be supplemented. You can transfer more than 10 EOS to the contract, and write "deposit" in the MEMO (no double quotation marks).This will be recorded as a deposit.
 
-In contrast, whenever the unstaked account of the contract eosiocpubank is larger than 5000.0000 EOS, the contract automatically closes the deposit , you will be unable to send the EOS to the bank, and any transfer that includes deposit in the remarks will be automatically rejected by the system.
+In contrast, whenever the unstaked account of the contract eosiocpubank is larger than 50000.0000 EOS, the contract automatically closes the deposit , you will be unable to send the EOS to the bank, and any transfer that includes deposit in the remarks will be automatically rejected by the system.
 
 This keeps the Banks' savings pools at the right size to prevent yields on all savers from falling because of excess deposits.
 
@@ -158,11 +158,12 @@ You don't need to do anything, and the smart contract automatically reclaims res
 The longer the lease, the lower the cost of the lease, obviously, the less it would cost to lease seven days a week.That's true in the hospitality industry, where it's obviously cheaper to book a room for a long time than to stay for just one day.Of course, if you don't have to lease for that long, a temporary lease is still more cost-effective when you do.If you are busy with business and have special requirements for resources, please refer to the chapter of this document "high-end financial services".
   
 - why can't I save?The transfer failed.  
-EOS bank adopts the industry-leading dynamic savings model. When the capital of EOS bank exceeds 5000000 EOS, it will automatically reject the customer's savings. No one can send EOS to the contract account.You will be able to send EOS storage, but please note that the amount you send does not make the EOS bank's capital pool larger than 5000.0000 EOS.
+EOS bank adopts the industry-leading dynamic savings model. When the capital of EOS bank exceeds 50000.0000 EOS, it will automatically reject the customer's savings. No one can send EOS to the contract account.You will be able to send EOS storage, but please note that the amount you send does not make the EOS bank's capital pool larger than 50000.0000 EOS.
 
 ### Open source
   
-- Contract hash: 6 d5b1df36c76446542689e6f8c6b956373326961c09232149dbd3710abeed6cb
+- Contract hash：85167ac58f2853ab920c0349a9de33d38b740aa3b72ab736c37f86089df5476b
+- lastest deploy Time:2018-08-13 11:40:55
 - The contract operation process and functions of EOS bank are detailed and are already in the semi-open source mode. Just like all traditional Banks will not open the risk control model inside the bank, we will only submit the code to block. one for review.
 - If you need detailed information, please click to view] (https://eospark.com/MainNet/contract/eosiocpubank) ABI interface contract.
 - Waiting for the official contract review system of block. one, we will immediately submit the real-name system and code safety double review.
