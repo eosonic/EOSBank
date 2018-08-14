@@ -13,9 +13,9 @@ With the development of EOS ecology, EOS CPU resources will become more and more
   
 Use any EOS wallet app, to the account of the contract: eosiocpubank sent alittle EOS, multiple CPU please see the next section of the current lease price, number will be automatically calculated for you the lease contract, and the delegate EOS you get CPU resources, 0.5 seconds after the delegate to the account, you can even write other account name in MEMO, we will write to you this account provides leasing, don't write the default account name lease give yourself.
   
-The amount of EOS transferred determines the amount of CPU delegate. For example, the transfer of 0.05 EOS will immediately delegate 15.283CPU resources for you. The MEMO can be written to the lease time you need.
+The amount of EOS transferred determines the amount of CPU delegate. For example, the transfer of 0.05 EOS will immediately delegate CPU 9.1249 resources for you. The MEMO can be written to the lease time you need.
   
-MEMO: "3d/7d" will automatically delegate you for 4 days /7 days. Below is the transfer using wallet, which will immediately get 15.283EOS CPU resources for 4 days. 
+MEMO: "3d/7d" will automatically delegate you for 4 days /7 days. Below is the transfer using wallet, which will immediately get 5.2146 CPU resources for 4 days. 
   
 ![rent](https://github.com/eosonic/EOSBank/blob/master/image/rent4.png)
   
@@ -31,15 +31,15 @@ If you need to rent CPU for other accounts, please write the account name in the
 > cleos transfer youraccount **eosiocpubank** "0.1 EOS" "4d youraccount"      
 > cleos transfer youraccount **eosiocpubank** "0.1 EOS" "7d youraccount" 
   
-Caution: due to the large number of SPAM sending 0.0001 EOS on EOS blockchain, the lowest rental supported by EOS bank currently sends 0.01 EOS. We recommend sending 0.05, enabling you to get 15.283 CPU resources for EOS.
+Caution: due to the large number of SPAM sending 0.0001 EOS on EOS blockchain, the lowest rental supported by EOS bank currently sends 0.01 EOS. We recommend sending 0.05, enabling you to get 9.1249 CPU resources for EOS.
 
 ### Current lease price
 
 sent | get CPU | duration | 
 ------------ | -------------|-------------
-0.1 EOS | 30.4166 EOS CPU | 24 Hours  | 
-0.1 EOS | 20.8571 EOS CPU | 4 days | 
-0.1 EOS | 18.2500 EOS CPU | 1 week | 
+0.1 EOS | 18.2499 EOS CPU | 24 Hours  | 
+0.1 EOS | 10.4285 EOS CPU | 4 days | 
+0.1 EOS | 7.2989 EOS CPU | 1 week | 
 
 ### Dynamic savings model
 
@@ -66,7 +66,7 @@ In the previous chapter, if the EOS bank's saving pool is full(more than 5000EOS
 
 The interest received by the completion of A leasing transaction is L, and we will take a snapshot of the current savings assets, set the total balance of platform savings as N, and A customer savings as A, then the customer will get A/NL interest dividend immediately according to the amount of savings A.
 
-Your total interest income is affected by the dynamic rental rate. Let's say the platform has 10,000 EOS , you save 5,000, and when we rent out 7,500, you get 22.5% real interest, that is, set the interest rate **multiply** the rental rate is equal to the real interest rate.
+Your total interest income is affected by the dynamic rental rate. Let's say the platform has 10,000 EOS , you save 5,000, and when we rent out 7,500, you get 75% real interest, that is, set the interest rate **multiply** the rental rate is equal to the real interest rate.
 Actual calculation demonstration:
 
 We received A lease request of 10 EOS. At present, the computing platform unstaked was 5000 EOS, and the customer stored 100 EOS on the platform. Then A/NL=100 savings /5000 total amount X10 interest =0.2EOS.This snapshot dividend has nothing to do with rental rates.
@@ -146,7 +146,7 @@ Just as the traditional bank needs to settle, the EOS bank will close for one mi
 NO!we are automatic smart contract,no any app,you can use any EOS wallet to operate.
   
 - Why do I need to rent the CPU instead of buying it?  
-Most people are not every day need CPU resources, broke out in a short time of CPU demand will take up a lot of money, we offer 1 day / 3 days/1 week of short-term lease contract, under the assumption that World Cup coming and you need to send ads, then send a EOS will be provided to you 304.1 EOS of CPU resources and keep all day, you don't have to delegate 304.1 EOS and wait for three day of undeledage.You can even get 3.041 credits by sending just 0.01.
+Most people are not every day need CPU resources, broke out in a short time of CPU demand will take up a lot of money, we offer 1 day / 3 days/1 week of short-term lease contract, under the assumption that World Cup coming and you need to send ads, then send a EOS will be provided to you 304.1 EOS of CPU resources and keep all day, you don't have to delegate 182.4992 EOS and wait for three day of undeledage.You can even get 1.8249 credits by sending just 0.01.
   
 - Can I rent CPU resources to other accounts?  
 Of course, if you put the account name in the MEMO, we will mortgage the resources on the account you wrote. Currently, only 12-bit accounts are supported.
