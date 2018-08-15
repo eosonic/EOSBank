@@ -102,7 +102,7 @@ If you don't have an EOS software or a delivery tool for the Cleos command, perf
 2. Select post, type https://api.eosnewyork.io/v1/chain/get_table_rows in the URL column
 3. in the Request Body,input：{"json":"true","code":"eosiocpubank","scope":"youraccount","table":"refunds"}
 4. click Send One
-5. After waiting for a few seconds,request_time will show how long it will be before your withdrawal reaches your account.This is a UNIX time.
+5. After waiting for a few seconds,request_time will show what's the time you request withdrawal,this is a UNIX time,you need tool transfer the Unix time to UTC,after 3 days,you will get your EOS in your account.
 
 ### cancel withdrawal application
 
