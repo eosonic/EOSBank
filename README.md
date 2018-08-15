@@ -93,7 +93,7 @@
 2. 选择post，在URL一栏输入https://api.eosnewyork.io/v1/chain/get_table_rows
 3. 在Request Body一栏输入：{"json":"true","code":"eosiocpubank","scope":"这里输入你的EOS存款账号","table":"refunds"}
 4. 点击Send One
-5. 等待几秒后，在Body里，request_time会显示还有多久你的提现会到达你的账户。
+5. 等待几秒后，在Body里，request_time会显示你的提币操作时间，这个数字是Unix时间戳，请百度“Unix时间戳转换工具”转换的时间加三天为体现到账时间。
 
 ### 解除提现申请
 
