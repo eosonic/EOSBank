@@ -1,4 +1,4 @@
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner3.jpg)
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner2.jpg)
  
    
 ## EOS Bank 柚资银行  
@@ -39,7 +39,7 @@
 0.1 EOS | 10.4285 EOS CPU | 4天 | 
 0.1 EOS | 7.2989 EOS CPU | 1周 | 
 
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner4.jpg)
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner4.png)
 
 ### 向银行存款
 银行合约eosiocpubank支持储蓄你的EOS币到银行，每当有任意租单成交，我们会立即分红给每一个储蓄的账号。
@@ -103,7 +103,7 @@
 
 > cleos transfer 你的账号 **eosiocpubank** "0.0002 EOS" ""      
 
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner5.jpg)
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner5.png)
 
 ### 柚资银行优势
 
@@ -128,9 +128,7 @@
 
 ### 银行打烊时间 
 就像传统银行需要结算一样，柚资银行在每天的UTC16:00-UTC16:01将会打烊一分钟时间，在这个打烊的时间段内，合约会自动拒绝所有租赁需求。柚资银行的智能合约开始自我审查这一天的所有动作，生成报表以供人工审核分析银行的业务状态。
-
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner6.jpg)
-
+  
 ### 常见问题  
   
 - 去哪里下载APP使用？
