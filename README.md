@@ -77,7 +77,7 @@
 4. 点击Send One
 5. 等待几秒后，在Body里，amount会显示储蓄余额+分红数值，图例为显示了账号cpubankfound的余额，请更改为你的账号。  
   
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/deposit.jpg)  
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/deposit.png)  
   
 ### 提现和查询提现进度：
  
