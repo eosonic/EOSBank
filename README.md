@@ -1,4 +1,4 @@
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner2.jpg)
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner2.png)
  
    
 ## EOS Bank 柚资银行  
