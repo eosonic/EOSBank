@@ -160,7 +160,7 @@
 - EOSonic@outlook.com 
 - Wechat@eosiobank/auoka-
 
-#### 柚资银行是虎符钱包旗下DApp 详情参阅https://hoo.com/
+#### 柚资银行是虎符钱包旗下DApp 虎符钱包：https://hoo.com/
 
 ---
 ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/EOSBank.png)
