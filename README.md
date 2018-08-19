@@ -1,4 +1,4 @@
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner3.png)
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner3.jpg)
  
    
 ## EOS Bank 柚资银行  
@@ -39,7 +39,7 @@
 0.1 EOS | 10.4285 EOS CPU | 4天 | 
 0.1 EOS | 7.2989 EOS CPU | 1周 | 
 
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner4.png)
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner4.jpg)
 
 ### 向银行存款
 银行合约eosiocpubank支持储蓄你的EOS币到银行，每当有任意租单成交，我们会立即分红给每一个储蓄的账号。
@@ -52,7 +52,7 @@
 
 使用任意EOS钱包，向合约账户：**eosiocpubank** 转入大于10个EOS，必须小于50000个EOS，备注MEMO写上deposit,支持任意笔存款转账，它们都会记录在你的账号下。不支持替其他账户存款，备注MEMO仅支持写入deposit，参见上一章节，如果柚资银行资金池满了（超过50000EOS），则无法接受储蓄，智能合约将会自动拒绝客户存款。请等待银行储蓄降低后操作储蓄。 
   
-  ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/deposit2.png)
+  ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/deposit2.jpg)
 
 
 ### 分红结算模型
@@ -77,7 +77,7 @@
 4. 点击Send One
 5. 等待几秒后，在Body里，amount会显示储蓄余额+分红数值，图例为显示了账号cpubankfound的余额，请更改为你的账号。  
   
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/deposit.png)  
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/deposit.jpg)  
   
 ### 提现和查询提现进度：
  
@@ -103,7 +103,7 @@
 
 > cleos transfer 你的账号 **eosiocpubank** "0.0002 EOS" ""      
 
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner5.png)
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner5.jpg)
 
 ### 柚资银行优势
 
@@ -129,7 +129,7 @@
 ### 银行打烊时间 
 就像传统银行需要结算一样，柚资银行在每天的UTC16:00-UTC16:01将会打烊一分钟时间，在这个打烊的时间段内，合约会自动拒绝所有租赁需求。柚资银行的智能合约开始自我审查这一天的所有动作，生成报表以供人工审核分析银行的业务状态。
 
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner6.png)
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner6.jpg)
 
 ### 常见问题  
   
