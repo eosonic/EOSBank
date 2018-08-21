@@ -15,7 +15,7 @@ Use any EOS wallet app, to the account of the contract: eosiocpubank sent alittl
   
 The amount of EOS transferred determines the amount of CPU delegate. For example, the transfer of 0.05 EOS will immediately delegate CPU 11.4062 resources for you. The MEMO can be written to the lease time you need.
   
-MEMO: "3d/7d" will automatically delegate you for 4 days /7 days. Below is the transfer using wallet, which will immediately get 6.5178EOS CPU resources for 4 days. 
+MEMO: "4d/7d" will automatically delegate you for 4 days /7 days. Below is the transfer using wallet, which will immediately get 6.5178EOS CPU resources for 4 days. 
   
 ![rent](https://github.com/eosonic/EOSBank/blob/master/image/rent4.png)
   
