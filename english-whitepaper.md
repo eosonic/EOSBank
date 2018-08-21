@@ -13,7 +13,7 @@ With the development of EOS ecology, EOS CPU resources will become more and more
   
 Use any EOS wallet app, to the account of the contract: eosiocpubank sent alittle EOS, multiple CPU please see the next section of the current lease price, number will be automatically calculated for you the lease contract, and the delegate EOS you get CPU resources, 0.5 seconds after the delegate to the account, you can even write other account name in MEMO, we will write to you this account provides leasing, don't write the default account name lease give yourself.
   
-The amount of EOS transferred determines the amount of CPU delegate. For example, the transfer of 0.05 EOS will immediately delegate CPU 9.1249 resources for you. The MEMO can be written to the lease time you need.
+The amount of EOS transferred determines the amount of CPU delegate. For example, the transfer of 0.05 EOS will immediately delegate CPU 11.4062 resources for you. The MEMO can be written to the lease time you need.
   
 MEMO: "3d/7d" will automatically delegate you for 4 days /7 days. Below is the transfer using wallet, which will immediately get 6.5178EOS CPU resources for 4 days. 
   
@@ -33,7 +33,7 @@ If you need to rent CPU for other accounts, please write the account name in the
   
 Caution: due to the large number of SPAM sending 0.0001 EOS on EOS blockchain, the lowest rental supported by EOS bank currently sends 0.01 EOS. We recommend sending 0.05, enabling you to get 9.1249 CPU resources for EOS.
 
-### Current lease price
+### Current lease price （mulriple 228.125） 
 
 sent | get CPU | duration | 
 ------------ | -------------|-------------
