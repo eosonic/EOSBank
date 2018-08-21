@@ -1,4 +1,4 @@
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner.png)
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner2.png)
  
    
 ## EOS Bank
@@ -15,7 +15,7 @@ Use any EOS wallet app, to the account of the contract: eosiocpubank sent alittl
   
 The amount of EOS transferred determines the amount of CPU delegate. For example, the transfer of 0.05 EOS will immediately delegate CPU 9.1249 resources for you. The MEMO can be written to the lease time you need.
   
-MEMO: "3d/7d" will automatically delegate you for 4 days /7 days. Below is the transfer using wallet, which will immediately get 5.2146 CPU resources for 4 days. 
+MEMO: "3d/7d" will automatically delegate you for 4 days /7 days. Below is the transfer using wallet, which will immediately get 6.5178EOS CPU resources for 4 days. 
   
 ![rent](https://github.com/eosonic/EOSBank/blob/master/image/rent4.png)
   
@@ -37,9 +37,11 @@ Caution: due to the large number of SPAM sending 0.0001 EOS on EOS blockchain, t
 
 sent | get CPU | duration | 
 ------------ | -------------|-------------
-0.1 EOS | 18.2499 EOS CPU | 24 Hours  | 
-0.1 EOS | 10.4285 EOS CPU | 4 days | 
-0.1 EOS | 7.2989 EOS CPU | 1 week | 
+0.1 EOS | 22.8125 EOS CPU | 24 Hours  | 
+0.1 EOS | 13.0357 EOS CPU | 4 days | 
+0.1 EOS | 9.1250 EOS CPU | 1 week | 
+
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner4.png)
 
 ### Dynamic savings model
 
@@ -146,7 +148,7 @@ Just as the traditional bank needs to settle, the EOS bank will close for one mi
 NO!we are automatic smart contract,no any app,you can use any EOS wallet to operate.
   
 - Why do I need to rent the CPU instead of buying it?  
-Most people are not every day need CPU resources, broke out in a short time of CPU demand will take up a lot of money, we offer 1 day / 3 days/1 week of short-term lease contract, under the assumption that World Cup coming and you need to send ads, then send a EOS will be provided to you 304.1 EOS of CPU resources and keep all day, you don't have to delegate 182.4992 EOS and wait for three day of undeledage.You can even get 1.8249 credits by sending just 0.01.
+Most people are not every day need CPU resources, broke out in a short time of CPU demand will take up a lot of money, we offer 1 day / 3 days/1 week of short-term lease contract, under the assumption that World Cup coming and you need to send ads, then send a EOS will be provided to you 228.1250 EOS of CPU resources and keep all day, you don't have to delegate 182.4992 EOS and wait for three day of undeledage.You can even get 2.2812 EOS CPU by sending just 0.01.
   
 - Can I rent CPU resources to other accounts?  
 Of course, if you put the account name in the MEMO, we will mortgage the resources on the account you wrote. Currently, only 12-bit accounts are supported.
