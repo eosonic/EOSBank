@@ -61,6 +61,7 @@ Deposit is not supported for other accounts. The MEMO can only be written into d
 
 In the previous chapter, if the EOS bank's saving pool is full(more than 5000EOS), it will be unable to accept savings, and the smart contract will automatically refuse customer deposits.Please wait for bank savings to be reduced before operating savings.
   
+WARNING:Contract account deposits and withdrawals are not supported.  
   ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/deposit2.png)
 
 
