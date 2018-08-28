@@ -25,7 +25,7 @@
 
 如果你需要给其他账号租赁资源，请在备注里写账号名称即可:
   
-> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "youraccount"  
+> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "1d youraccount"  
 > cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "4d youraccount"      
 > cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "7d youraccount" 
   
