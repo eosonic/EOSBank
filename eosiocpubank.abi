@@ -94,6 +94,16 @@
       ]
     },
     {
+      "name": "rmbykey",
+      "base": "",
+      "fields": [
+        {
+          "name": "key",
+          "type": "uint64"
+        }
+      ]
+    },
+    {
       "name": "erase",
       "base": "",
       "fields": []
@@ -102,6 +112,20 @@
       "name": "init",
       "base": "",
       "fields": []
+    },
+    {
+      "name": "blacklist",
+      "base": "",
+      "fields": [
+        {
+          "name": "name",
+          "type": "name"
+        },
+        {
+          "name": "active",
+          "type": "uint64"
+        }
+      ]
     },
     {
       "name": "deposit",
@@ -267,6 +291,11 @@
       "ricardian_contract": ""
     },
     {
+      "name": "rmbykey",
+      "type": "rmbykey",
+      "ricardian_contract": ""
+    },
+    {
       "name": "erase",
       "type": "erase",
       "ricardian_contract": ""
@@ -274,6 +303,11 @@
     {
       "name": "init",
       "type": "init",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "blacklist",
+      "type": "blacklist",
       "ricardian_contract": ""
     }
   ],
@@ -376,6 +410,17 @@
         "name"
       ],
       "type": "rentalacco"
+    },
+    {
+      "name": "blacklist",
+      "index_type": "i64",
+      "key_names": [
+        "name"
+      ],
+      "key_types": [
+        "name"
+      ],
+      "type": "blacklist"
     }
   ],
   "error_messages": [],
