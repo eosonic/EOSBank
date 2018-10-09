@@ -11,7 +11,7 @@ With the development of EOS ecology, EOS CPU resources will become more and more
 
 ### How to used
   
-Use any EOS wallet app, to the account of the contract: eosiocpubank sent alittle EOS, multiple CPU please see the next section of the current lease price, number will be automatically calculated for you the lease contract, and the delegate EOS you get CPU resources, 0.5 seconds after the delegate to the account, you can even write other account name in MEMO, we will write to you this account provides leasing, don't write the default account name lease give yourself.
+Use any EOS wallet app, to the account of the contract: cpubankeosio sent alittle EOS, multiple CPU please see the next section of the current lease price, number will be automatically calculated for you the lease contract, and the delegate EOS you get CPU resources, 0.5 seconds after the delegate to the account, you can even write other account name in MEMO, we will write to you this account provides leasing, don't write the default account name lease give yourself.
   
 The amount of EOS transferred determines the amount of CPU delegate. For example, the transfer of 0.05 EOS will immediately delegate CPU 11.4062 resources for you. The MEMO can be written to the lease time you need.
   
@@ -21,15 +21,15 @@ MEMO: "4d/7d" will automatically delegate you for 4 days /7 days. Below is the t
   
 Use command line mode:
   
-> cleos transfer youraccount **eosiocpubank** "0.1 EOS" ""       
-> cleos transfer youraccount **eosiocpubank** "0.1 EOS" "4d"      
-> cleos transfer youraccount **eosiocpubank** "0.1 EOS" "7d" 
+> cleos transfer youraccount **cpubankeosio** "0.1 EOS" ""       
+> cleos transfer youraccount **cpubankeosio** "0.1 EOS" "4d"      
+> cleos transfer youraccount **cpubankeosio** "0.1 EOS" "7d" 
 
 If you need to rent CPU for other accounts, please write the account name in the remarks:
   
-> cleos transfer youraccount **eosiocpubank** "0.1 EOS" "youraccount"  
-> cleos transfer youraccount **eosiocpubank** "0.1 EOS" "4d youraccount"      
-> cleos transfer youraccount **eosiocpubank** "0.1 EOS" "7d youraccount" 
+> cleos transfer youraccount **cpubankeosio** "0.1 EOS" "youraccount"  
+> cleos transfer youraccount **cpubankeosio** "0.1 EOS" "4d youraccount"      
+> cleos transfer youraccount **cpubankeosio** "0.1 EOS" "7d youraccount" 
   
 Caution: due to the large number of SPAM sending 0.0001 EOS on EOS blockchain, the lowest rental supported by EOS bank currently sends 0.01 EOS. We recommend sending 0.05, enabling you to get 9.1249 CPU resources for EOS.
 
@@ -45,17 +45,17 @@ sent | get CPU | duration |
 
 ### Dynamic savings model
 
-EOS bank contract eosiocpubank supports saving your EOS currency to the bank, whenever there is any lease transaction, we will immediately dividends to each savings account.
+EOS bank contract cpubankeosio supports saving your EOS currency to the bank, whenever there is any lease transaction, we will immediately dividends to each savings account.
 
-In order to keep the rate of return of savings stable, we limited the size of the savings pool. When the unstaked of the contract eosiocpubank is less than 50000.0000 EOS, the contract will automatically open the deposit, which is regarded as the bank's lack of funds needs to be supplemented. You can transfer more than 10 EOS to the contract, and write "deposit" in the MEMO (no double quotation marks).This will be recorded as a deposit.
+In order to keep the rate of return of savings stable, we limited the size of the savings pool. When the unstaked of the contract cpubankeosio is less than 50000.0000 EOS, the contract will automatically open the deposit, which is regarded as the bank's lack of funds needs to be supplemented. You can transfer more than 10 EOS to the contract, and write "deposit" in the MEMO (no double quotation marks).This will be recorded as a deposit.
 
-In contrast, whenever the unstaked account of the contract eosiocpubank is larger than 50000.0000 EOS, the contract automatically closes the deposit , you will be unable to send the EOS to the bank, and any transfer that includes deposit in the remarks will be automatically rejected by the system.
+In contrast, whenever the unstaked account of the contract cpubankeosio is larger than 50000.0000 EOS, the contract automatically closes the deposit , you will be unable to send the EOS to the bank, and any transfer that includes deposit in the remarks will be automatically rejected by the system.
 
 This keeps the Banks' savings pools at the right size to prevent yields on all savers from falling because of excess deposits.
 
 ### How to saving
 
-Use any EOS wallet to sent to contract account: **eosiocpubank** transfer more than 10 EOS, must be less than 1000 EOS, MEMO deposit, support any deposit sent, they will be recorded under your account.
+Use any EOS wallet to sent to contract account: **cpubankeosio** transfer more than 10 EOS, must be less than 1000 EOS, MEMO deposit, support any deposit sent, they will be recorded under your account.
   
 Deposit is not supported for other accounts. The MEMO can only be written into deposit. Please refer to the previous chapter.wait for bank savings to be reduced before operating savings.
 
@@ -168,7 +168,7 @@ EOS bank adopts the industry-leading dynamic savings model. When the capital of 
 - Contract hash：42a948ec4f1c7d3cf6195858e9e0f4991fee08dba3f34484d367fca3b20c4668
 - lastest deploy Time:2018-08-21 23:53:11
 - The contract operation process and functions of EOS bank are detailed and are already in the semi-open source mode. Just like all traditional Banks will not open the risk control model inside the bank, we will only submit the code to block. one for review.
-- If you need detailed information, please click to view] (https://eospark.com/MainNet/contract/eosiocpubank) ABI interface contract.
+- If you need detailed information, please click to view] (https://eospark.com/MainNet/contract/cpubankeosio) ABI interface contract.
 - Waiting for the official contract review system of block. one, we will immediately submit the real-name system and code safety double review.
 
 ### Contact US
