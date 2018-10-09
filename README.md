@@ -11,7 +11,7 @@
 
 ### 资源租赁操作
 
-使用任意EOS钱包，向银行合约账户：**eosiocpubank** 转入少量EOS，资源倍数请参阅下一章节**当前租赁价格**，合约将会自动按照租赁利率计算后，0.5秒内为你抵押CPU资源，你甚至可以在备注里写其他账号名字，我们将为你写的的这个账号提供租赁，不写账号名则默认租赁给你自己。  
+使用任意EOS钱包，向银行合约账户：**cpubankeosio** 转入少量EOS，资源倍数请参阅下一章节**当前租赁价格**，合约将会自动按照租赁利率计算后，0.5秒内为你抵押CPU资源，你甚至可以在备注里写其他账号名字，我们将为你写的的这个账号提供租赁，不写账号名则默认租赁给你自己。  
   
 转账数量决定了获得CPU抵押的数量，例如：转入0.05个币并且备注为空时，将立即为你抵押11.4062个EOS的CPU资源，备注写上“4d/7d”,将会自动为你抵押4天/7天,下图是使用钱包操作转账，这将立即获得6.5178EOS的CPU资源维持4天。   
   
@@ -19,15 +19,15 @@
   
 命令行操作：
   
-> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" ""       
-> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "4d"      
-> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "7d" 
+> cleos transfer 你的账号 **cpubankeosio** "0.1 EOS" ""       
+> cleos transfer 你的账号 **cpubankeosio** "0.1 EOS" "4d"      
+> cleos transfer 你的账号 **cpubankeosio** "0.1 EOS" "7d" 
 
 如果你需要给其他账号租赁资源，请在备注里写账号名称即可:
   
-> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "1d youraccount"  
-> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "4d youraccount"      
-> cleos transfer 你的账号 **eosiocpubank** "0.1 EOS" "7d youraccount" 
+> cleos transfer 你的账号 **cpubankeosio** "0.1 EOS" "1d youraccount"  
+> cleos transfer 你的账号 **cpubankeosio** "0.1 EOS" "4d youraccount"      
+> cleos transfer 你的账号 **cpubankeosio** "0.1 EOS" "7d youraccount" 
   
 提醒：由于EOS网络存在大量发送0.0001个EOS的广告行为，柚资银行目前支持的最低租赁发送0.01 EOS，我们推荐你按照自己的需求，使用下方的利息公式，发送一定量的EOS币，获得CPU计算资源
 
@@ -43,17 +43,17 @@
 
 ### 银行存款 
 
-银行合约eosiocpubank支持储蓄你的EOS币到银行，每当有任意租单成交，我们会立即分红给每一个储蓄的账号。
+银行合约cpubankeosio支持储蓄你的EOS币到银行，每当有任意租单成交，我们会立即分红给每一个储蓄的账号。
 
-为了保持储蓄的收益率稳定，柚资银行使用了动态的存款模型设计，限制了储蓄池的大小，当合约eosiocpubank的unstaked小于50000.0000EOS，合约将会自动开放存款功能，这被视为银行缺乏资金需要补充，你可以转账大于100个EOS币到合约，在备注MEMO里写入“deposit”（没有双引号）。这将会被记录为存款。
+为了保持储蓄的收益率稳定，柚资银行使用了动态的存款模型设计，限制了储蓄池的大小，当合约cpubankeosio的unstaked小于50000.0000EOS，合约将会自动开放存款功能，这被视为银行缺乏资金需要补充，你可以转账大于100个EOS币到合约，在备注MEMO里写入“deposit”（没有双引号）。这将会被记录为存款。
 
-相反的，每当合约 eosiocpubank的unstaked大于50000.0000个EOS，合约自动关闭存款功能，你将会无法把EOS币发送给银行，任何在备注内包含deposit的转账将会被系统自动拒收。我们以此来保持银行资金池的大小在合适的状态，以防止由于存款过多导致所有储户的收益率明显下降。
+相反的，每当合约 cpubankeosio的unstaked大于50000.0000个EOS，合约自动关闭存款功能，你将会无法把EOS币发送给银行，任何在备注内包含deposit的转账将会被系统自动拒收。我们以此来保持银行资金池的大小在合适的状态，以防止由于存款过多导致所有储户的收益率明显下降。
 
 注意:为了防止租赁外包商，我们不支持EOS合约账号存款和提款。
 
 ### 存款操作说明 
 
-使用任意EOS钱包，向合约账户：**eosiocpubank** 转入大于100个EOS，必须小于50000个EOS，备注MEMO写上deposit,支持任意笔存款转账，它们都会记录在你的账号下。不支持替其他账户存款，备注MEMO仅支持写入deposit，参见上一章节，如果柚资银行资金池满了（超过50000EOS），则无法接受储蓄，智能合约将会自动拒绝客户存款，请等待银行储蓄降低后操作储蓄。 
+使用任意EOS钱包，向合约账户：**cpubankeosio** 转入大于100个EOS，必须小于50000个EOS，备注MEMO写上deposit,支持任意笔存款转账，它们都会记录在你的账号下。不支持替其他账户存款，备注MEMO仅支持写入deposit，参见上一章节，如果柚资银行资金池满了（超过50000EOS），则无法接受储蓄，智能合约将会自动拒绝客户存款，请等待银行储蓄降低后操作储蓄。 
   
   ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/deposit2.png)
 
@@ -71,12 +71,12 @@
 
 使用命令行模式：  
 
->cleos get table **eosiocpubank** 你的账号 deposit    
+>cleos get table **cpubankeosio** 你的账号 deposit    
   
 如果你没有EOS软件，也没有Cleos命令的发送工具，请执行以下动作到EOS区块链上实时查询你的存款；
 1. 打开API查询网站 http://apirequest.io/
 2. 选择post，在URL一栏输入https://api.eosnewyork.io/v1/chain/get_table_rows
-3. 在Request Body一栏输入：{"json":"true","code":"eosiocpubank","scope":"这里输入你的EOS存款账号","table":"deposit"}
+3. 在Request Body一栏输入：{"json":"true","code":"cpubankeosio","scope":"这里输入你的EOS存款账号","table":"deposit"}
 4. 点击Send One
 5. 等待几秒后，在Body里，amount会显示储蓄余额+分红数值，图例为显示了账号cpubankfound的余额，请更改为你的账号。  
   
@@ -86,27 +86,27 @@
   
 ### 提现和查询提现进度：
  
-如你需要提现你的存款，柚资银行仅支持一次性提取所有余额+分红，方法是，请使用任意EOS钱包发送0.0001个EOS币到柚资银行eosiocpubank即可进入提现队列，注意，请勿写入任何备注MEMO，根据EOS网络设定，解除抵押需要等待3天，合约将在3天后自动发送你所有的EOS币加分红到你的账号，可以使用命令行来提现：
+如你需要提现你的存款，柚资银行仅支持一次性提取所有余额+分红，方法是，请使用任意EOS钱包发送0.0001个EOS币到柚资银行cpubankeosio即可进入提现队列，注意，请勿写入任何备注MEMO，根据EOS网络设定，解除抵押需要等待3天，合约将在3天后自动发送你所有的EOS币加分红到你的账号，可以使用命令行来提现：
   
-> cleos transfer 你的账号 **eosiocpubank** "0.0001 EOS" ""    
+> cleos transfer 你的账号 **cpubankeosio** "0.0001 EOS" ""    
   
 提现命令发送后，请使用命令行模式查询提现进度，request_time会显示你的提币操作时间，这个数字是Unix时间戳，请百度“Unix时间戳转换工具”转换的时间加三天为体现到账时间：  
   
->cleos get table **eosiocpubank** 你的账号 refunds  
+>cleos get table **cpubankeosio** 你的账号 refunds  
 
 如果你没有EOS软件，也没有Cleos命令的发送工具，请执行以下动作查询你的提现进度；
   
 1. 打开API查询网站 http://apirequest.io/
 2. 选择post，在URL一栏输入https://api.eosnewyork.io/v1/chain/get_table_rows
-3. 在Request Body一栏输入：{"json":"true","code":"eosiocpubank","scope":"这里输入你的EOS存款账号","table":"refunds"}
+3. 在Request Body一栏输入：{"json":"true","code":"cpubankeosio","scope":"这里输入你的EOS存款账号","table":"refunds"}
 4. 点击Send One
 5. 等待几秒后，在Body里，request_time会显示你的提币操作时间，这个数字是Unix时间戳，请百度“Unix时间戳转换工具”转换的时间加三天为体现到账时间。
 
 ### 解除你的提现申请
 
-如果你在提现命令发送后的72小时内想要取消你的提现，请**使用任意EOS钱包发送0.0002个EOS币到柚资银行eosiocpubank即可取消你的提现请求**，注意，请勿写入任何备注MEMO，你也可以使用命令行来取消提现命令，这是立即生效的，你将会立即参与下一次租单的分红并获得收益。
+如果你在提现命令发送后的72小时内想要取消你的提现，请**使用任意EOS钱包发送0.0002个EOS币到柚资银行cpubankeosio即可取消你的提现请求**，注意，请勿写入任何备注MEMO，你也可以使用命令行来取消提现命令，这是立即生效的，你将会立即参与下一次租单的分红并获得收益。
 
-> cleos transfer 你的账号 **eosiocpubank** "0.0002 EOS" ""      
+> cleos transfer 你的账号 **cpubankeosio** "0.0002 EOS" ""      
 
 ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner5.png)
 
@@ -116,7 +116,7 @@
 柚资银行拥有充足的固定资本，同时吸收EOS小额储蓄，我们支持客户以大于100个EOS的数量储蓄自己的EOS币，我们会把利息收入返还给储蓄者。多样的资金来源，强大的资本保证，充分保障快速变化的租赁需求。
 
 - #### 全自动执行租赁订单
-采用智能合约响应租赁请求，任何人可以发送EOS币到合约账户**eosiocpubank**，系统按照当前价格立即租赁CPU给发送的客户。
+采用智能合约响应租赁请求，任何人可以发送EOS币到合约账户**cpubankeosio**，系统按照当前价格立即租赁CPU给发送的客户。
 
 - #### 先进的租赁周期算法
 同时满足客户的临时性资源需求和长周期资源租赁需求，智能合约按照需求的周期自动报价。
@@ -125,7 +125,7 @@
 全自动的资金池控制模型，全自动的快速委托秒级抵押和反抵押，如此快速的业务模型使得合约的运行非常繁忙，一系列动态的金融模型，使得柚资银行储蓄资本会拥有极高的周转率，同时收益率达到最高状态的同时租赁价格反而很低。这将给储蓄者带来高额回报，同样也降低了使用者的价格。
 
 - #### 实名制的合约开发者
-为了保持资金安全，对于大型储户，我们使用了账号权限隔离机制，合约eosiocpubank不拥有transfer EOS币的权限，这从根本上杜绝了大资金的被盗，同时，我们公开了团队开发者的身份信息以供查询。
+为了保持资金安全，对于大型储户，我们使用了多签安全机制，这从根本上杜绝了大资金的被盗，同时，我们公开了团队开发者的身份信息以供查询。
 
 ### 高端金融服务
   
@@ -158,7 +158,7 @@ EOS Bank柚资银行没有也不需要制作APP，它是一个运行在EOS网络
 - 合约hash：ecfd20b2ed9086a0f392ffa95222f12d94c0bb944c341df5476720b224320d7e
 - 合约最后更新时间:2018-09-18 12:10:59
 - 柚资银行的合约操作流程和功能已尽详，已属于半开源模式，就像所有的传统银行不会放开参观银行内部的风控模型一样，我们仅会将代码提交Block.one审阅。
-- 如需详细资料，[请点击查看](https://eospark.com/MainNet/contract/eosiocpubank)合约ABI接口。 
+- 如需详细资料，[请点击查看](https://eospark.com/MainNet/contract/cpubankeosio)合约ABI接口。 
 - 等待Block.one官方合约审查系统, 我们将立即提交实名制和代码安全双重审查。 
 
 ### 联系方式  
