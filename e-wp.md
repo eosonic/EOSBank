@@ -173,7 +173,7 @@ EOS bank adopts the industry-leading dynamic savings model. When the capital of 
 
 ### Contact US
 - EOSonic@outlook.com
-- Wechat @ eosiobank/auoka-
+- Wechat @ eosiobank
 
 ---
 ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/EOSBanke.png)
