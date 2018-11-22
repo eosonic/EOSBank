@@ -163,7 +163,7 @@ EOS Bank柚资银行没有也不需要制作APP，它是一个运行在EOS网络
 
 ### 联系方式  
 - EOSonic@outlook.com 
-- Wechat@eosiobank
+- Wechat：eosiobank
 
 
 ---
