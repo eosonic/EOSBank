@@ -39,7 +39,7 @@
 0.1 EOS | 13.0357 EOS CPU | 4天 | 
 0.1 EOS | 9.1250 EOS CPU | 1周 | 
 
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner4.png)
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner未知.png)
 
 ### 银行存款 
 
@@ -108,7 +108,7 @@
 
 > cleos transfer 你的账号 **cpubankeosio** "0.0002 EOS" ""      
 
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner5.png)
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner未知.png)
 
 ### 柚资银行优势
 
@@ -165,7 +165,6 @@ EOS Bank柚资银行没有也不需要制作APP，它是一个运行在EOS网络
 - EOSonic@outlook.com 
 - Wechat@eosiobank
 
-#### 柚资银行是虎符钱包旗下DApp 虎符钱包：https://hoo.com/
 
 ---
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/EOSBank.png)
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/EOSBank未知.png)
