@@ -78,40 +78,40 @@ We received A lease request of 10 EOS. At present, the computing platform unstak
 
 Use command line mode:  
 
->cleos get table **eosiocpubank** youraccount deposit    
+>cleos get table **cpubankeosio** youraccount deposit    
   
 If you don't have an EOS software or a delivery tool for the Cleos command, perform the following steps to query your deposits;
 1. Open the API query website: http://apirequest.io/
 2. Select post, type https://api.eosnewyork.io/v1/chain/get_table_rows in the URL column
-3. in the Request Body,input：{"json":"true","code":"eosiocpubank","scope":"youraccount","table":"deposit"}
+3. in the Request Body,input：{"json":"true","code":"cpubankeosio","scope":"youraccount","table":"deposit"}
 4. click Send One
 5. After waiting for a few seconds, in the Body, the amount will show the saving balance and the dividend, and the illustration shows the balance of the account cpubankfound. Please change it to your account.  
   
 ![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/deposit.png)  
 ### Withdrawal and enquiry of withdrawal progress:
   
-If you need to withdraw,bank support only one-time extract all add attach bonuses,use any EOS wallet send 0.0001 EOS to the contract eosiocpubank can withdraw funds into the queue, attention, please do not write any note MEMO, according to the EOS system setting, lift the mortgage needs to wait for 3 days, the contract will automatically send you in 3 days all EOS to your account,use the command line:
+If you need to withdraw,bank support only one-time extract all add attach bonuses,use any EOS wallet send 0.0001 EOS to the contract cpubankeosio can withdraw funds into the queue, attention, please do not write any note MEMO, according to the EOS system setting, lift the mortgage needs to wait for 3 days, the contract will automatically send you in 3 days all EOS to your account,use the command line:
   
-> cleos transfer youraccount **eosiocpubank** "0.0001 EOS" ""    
+> cleos transfer youraccount **cpubankeosio** "0.0001 EOS" ""    
   
 After the withdrawal command is sent, use the command line mode to query the withdrawal progress:  
   
->cleos get table **eosiocpubank** youraccount refunds  
+>cleos get table **cpubankeosio** youraccount refunds  
 
 If you don't have an EOS software or a delivery tool for the Cleos command, perform the following steps to query your withdrawal;
   
 If you don't have an EOS software or a delivery tool for the Cleos command, perform the following steps to query your deposits;
 1. Open the API query website: http://apirequest.io/
 2. Select post, type https://api.eosnewyork.io/v1/chain/get_table_rows in the URL column
-3. in the Request Body,input：{"json":"true","code":"eosiocpubank","scope":"youraccount","table":"refunds"}
+3. in the Request Body,input：{"json":"true","code":"cpubankeosio","scope":"youraccount","table":"refunds"}
 4. click Send One
 5. After waiting for a few seconds,request_time will show what's the time you request withdrawal,this is a UNIX time,you need tool transfer the Unix time to UTC,after 3 days,you will get your EOS in your account.
 
 ### cancel withdrawal application
 
-If within 72 hours after the withdrawal order to send you want to cancel your withdrawal, please use any EOS wallet send 0.0002 EOS to the contract eosiocpubank can cancel your withdrawal request, attention, please do not write any note MEMO, you can also use the command line to cancel the show command, this is effective immediately, you will immediately participate in rent and reap the benefits of share out bonus of single next time.
+If within 72 hours after the withdrawal order to send you want to cancel your withdrawal, please use any EOS wallet send 0.0002 EOS to the contract cpubankeosio can cancel your withdrawal request, attention, please do not write any note MEMO, you can also use the command line to cancel the show command, this is effective immediately, you will immediately participate in rent and reap the benefits of share out bonus of single next time.
 
-> cleos transfer youraccount **eosiocpubank** "0.0002 EOS" ""      
+> cleos transfer youraccount **cpubankeosio** "0.0002 EOS" ""      
 
 ### EOS Banks advantages
     
@@ -121,7 +121,7 @@ We support customers to save their EOS in amounts greater than 10 EOS. We will r
 
 Fully automatic lease order execution
 
-In response to rental requests with smart contracts, anyone can send EOS to the contract account **eosiocpubank**, and the system immediately delegate the CPU to the sent customer at the current price.
+In response to rental requests with smart contracts, anyone can send EOS to the contract account **cpubankeosio**, and the system immediately delegate the CPU to the sent customer at the current price.
 
 - #### Advanced leasing cycle algorithm
   
@@ -133,7 +133,7 @@ Automatic pools of saving control model, rapid automatic entrust the second mort
   
 - #### contract developer of the real name system
   
-In order to maintain the security of funds, for large depositors, we used the account permission isolation mechanism. The contract eosiocpubank does not have the permission to transfer EOS EOS, which fundamentally prevents the theft of large funds. Meanwhile, we disclosed the team developer's identity information for inquiry.
+In order to maintain the security of funds, for large depositors, we used the account permission isolation mechanism. The contract cpubankeosio does not have the permission to transfer EOS EOS, which fundamentally prevents the theft of large funds. Meanwhile, we disclosed the team developer's identity information for inquiry.
 
 ### VIP services
   
@@ -176,4 +176,4 @@ EOS bank adopts the industry-leading dynamic savings model. When the capital of 
 - Wechat @ eosiobank/auoka-
 
 ---
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/EOSBank.png)
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/EOSBanke.png)
