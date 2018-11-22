@@ -41,7 +41,7 @@ sent | get CPU | duration |
 0.1 EOS | 13.0357 EOS CPU | 4 days | 
 0.1 EOS | 9.1250 EOS CPU | 1 week | 
 
-![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banner4.png)
+![EOSBank](https://github.com/eosonic/EOSBank/blob/master/image/banneree.png)
 
 ### Dynamic savings model
 
