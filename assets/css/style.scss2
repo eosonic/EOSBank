@@ -1,9 +1,0 @@
----
----
-
-@import "{{ site.theme }}";
-@import bootsnav.scss;
-bootstrap.min.scss
-cubeportfolio.min.scss
-font-awesome.min.scss
-jquery.fancybox.scss
