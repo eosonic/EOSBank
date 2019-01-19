@@ -3,16 +3,16 @@
 ---
 
 @import "{{ site.theme }}";
-@import bootsnav.scss;
-@import bootstrap.min.scss;
-@import cubeportfolio.min.scss;
-@import font-awesome.min.scss;
-@import jquery.fancybox.scss;
-@import search.scss;
-@import settings.scss;
-@import owl.transitions.scss;
-@import owl.carousel.scss;
-@import reality-icon.scss;
+@import './bootsnav.scss';
+@import './bootstrap.min.scss';
+@import './cubeportfolio.min.scss';
+@import './font-awesome.min.scss';
+@import './jquery.fancybox.scss';
+@import './search.scss';
+@import './settings.scss';
+@import './owl.transitions.scss';
+@import './owl.carousel.scss';
+@import './reality-icon.scss';
 
 ﻿@charset "utf-8";
 
